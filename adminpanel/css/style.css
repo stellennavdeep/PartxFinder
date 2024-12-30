@@ -96,11 +96,6 @@ ul.sidebar-nav a svg { width: 18px; position: relative; top: -1px; }
     transition: all .2s ease-out;
 }
 
-.sidebar-link[data-bs-toggle="collapse"].collapsed::after {
-    transform: rotate(45deg);
-    transition: all .2s ease-out;
-}
-
 .avatar {
     height: 30px;
     width: 30px;
@@ -140,10 +135,10 @@ ul.sidebar-nav a svg { width: 18px; position: relative; top: -1px; }
 }
 
 /* Sidebar Toggle */
-aside#sidebar.collapsed { min-width: auto; width: 60px; }
-aside#sidebar.collapsed .sidebar-logo { visibility: hidden; }
-aside#sidebar.collapsed a.sidebar-link { padding-inline: 10px; font-size: 0; align-items: center; justify-content: center; }
-aside#sidebar.collapsed a.sidebar-link::after { top: 14px; right: 10px; }
+body.collapsed aside#sidebar{ min-width: 60px; max-width: 60px;}
+body.collapsed aside#sidebar .sidebar-logo { visibility: hidden; }
+body.collapsed aside#sidebar a.sidebar-link { padding-inline: 10px; font-size: 0; align-items: center; justify-content: center; }
+body.collapsed aside#sidebar a.sidebar-link::after { top: 14px; right: 10px; }
 
 
 /* Footer and Nav */
@@ -169,12 +164,12 @@ aside#sidebar.collapsed a.sidebar-link::after { top: 14px; right: 10px; }
 ::-webkit-scrollbar-thumb{background:#333;border-radius: 10px;}
 
 /* admin-panel */
-nav.navbar span.navbar-toggler-icon { filter: invert(1); }
+nav.navbar span.navbar-toggler-icon { filter: invert(1) brightness(0.0);}
 .bg-primary { background: #735dff !important; }
 .bg-secondary { background: #ff5a29 !important; }
 .bg-success { background: #0cc763 !important;}
 .bg-info {background: #0c9cfc !important;}
-.main nav.navbar { background: #fff; }
+.main nav.navbar { background: #fff;box-shadow: 0 0 .875rem 0 rgba(34, 46, 60, .05) }
 .avatar.avatar-md { width: 38px; height: 38px; line-height: 2.5rem; font-size: 0.8rem; display: flex ; align-items: center; justify-content: center; border-radius: 30px; padding: 10px; }
 .card.custom-card h3, .card.custom-card span { color: #2c2c2c; }
 .card.custom-card span.avatar svg { color: #fff; }
