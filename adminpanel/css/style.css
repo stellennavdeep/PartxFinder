@@ -91,8 +91,8 @@ ul.sidebar-nav a svg { width: 18px; position: relative; top: -1px; }
     padding: 2px;
     position: absolute;
     right: 1.5rem;
-    top: 1.4rem;
-    transform: rotate(-135deg);
+    top:16px;
+    transform:rotate(45deg);
     transition: all .2s ease-out;
 }
 
@@ -164,6 +164,8 @@ body.collapsed aside#sidebar a.sidebar-link::after { top: 14px; right: 10px; }
 ::-webkit-scrollbar-thumb{background:#333;border-radius: 10px;}
 
 /* admin-panel */
+label { color: #424242;}
+.form-control { font-size: 14px;box-shadow: unset !important;}
 nav.navbar span.navbar-toggler-icon { filter: invert(1) brightness(0.0);}
 .bg-primary { background: #735dff !important; }
 .bg-secondary { background: #ff5a29 !important; }
@@ -173,20 +175,16 @@ nav.navbar span.navbar-toggler-icon { filter: invert(1) brightness(0.0);}
 .avatar.avatar-md { width: 38px; height: 38px; line-height: 2.5rem; font-size: 0.8rem; display: flex ; align-items: center; justify-content: center; border-radius: 30px; padding: 10px; }
 .card.custom-card h3, .card.custom-card span { color: #2c2c2c; }
 .card.custom-card span.avatar svg { color: #fff; }
-.card.custom-card a.text-muted { font-size: 13px; color: #b7b7b7 !important; }
-
+.card.custom-card a.text-muted { font-size: 13px; color: #6c6c6c !important;}
+.card.custom-card a.text-muted:hover{color: #111 !important;}
 .card-header { padding-block: 15px; border-bottom: 1px solid #eee; }
 .card.custom-card .card-header .card-title { position: relative; margin-block-end: 0; font-size: 1.1rem; font-weight: 500;color: #111;}
-.card-body th { font-weight: 600; color: #262626;background: #f1f1f1}
+.card-body th { font-weight: 500; color: #262626;background: #f1f1f1;    text-transform: capitalize;}
 .card-body tr { border-color: #efefef; }
 .text-muted{    color: #afafaf !important;}
 .card-body td span.fs-11 { font-size: 12px; }
 .card-body td { color: #222; }
-.form-search {
-    position: relative;
-    display: inline-flex
-;
-}
+.form-search {position: relative;display: inline-flex; box-shadow: unset !important;}
 .form-search .icon-search { position: absolute; top: 11px; left: 14px; font-size: 20px; opacity: 0.4; }
 .form-search .btn-search { display: inline-flex ; align-items: center; justify-content: center; border-radius: 0 4px 4px 0; height: 100%; background: #0c9cfc; font-size: 12px; padding: 8px; font-weight: 500; color: #fff; }
 .form-search input{outline: unset; font-size: 14px; box-shadow: unset !important; border-radius: 4px 0 0 4px;}

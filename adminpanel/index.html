@@ -48,16 +48,29 @@
                         </a>
 
                     </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
-                            </svg>
-                            New admin
-                        </a>
-                    </li>
 
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-target="#multi" data-bs-toggle="collapse"
+                            aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                            <path
+                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                        </svg>
+                        New admin
+                        </a>
+                        <ul id="multi" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Create Admin</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">User C1</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">User B123</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link collapsed" data-bs-target="#multi" data-bs-toggle="collapse"
                             aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -69,16 +82,13 @@
                         </a>
                         <ul id="multi" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                             <li class="sidebar-item">
-                                <a href="#" class="sidebar-link collapsed" data-bs-target="#level-1"
-                                    data-bs-toggle="collapse" aria-expanded="false">Level 1</a>
-                                <ul id="level-1" class="sidebar-dropdown list-unstyled collapse">
-                                    <li class="sidebar-item">
-                                        <a href="#" class="sidebar-link">Level 1.1</a>
-                                    </li>
-                                    <li class="sidebar-item">
-                                        <a href="#" class="sidebar-link">Level 1.2</a>
-                                    </li>
-                                </ul>
+                                <a href="#" class="sidebar-link">User A</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">User C1</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">User B123</a>
                             </li>
                         </ul>
                     </li>
@@ -280,123 +290,123 @@
                         </div>
                     </div>
 
-                    <!-- Table Element -->
-
+                   <!-- all-admin page -->
                     <h4 class="mb-3">All Admins</h4>
-
                     <!-- filter -->
-                <div class="filters row mb-4">
-                   <div class="col-md-2 col-6">
-                    <label class="mb-2">All, Countries : cities</label>
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>All, Countries</option>
-                        <option value="1">USA</option>
-                        <option value="2">INDIA</option>
-                        <option value="3">Three</option>
-                      </select>   
-                   </div>
-                   <div class="col-md-2 col-6">
-                    <label class="mb-2">By Roles</label>
-                      <div class="dropdown">
-                        <button class="form-select" type="button" data-bs-toggle="dropdown">
-                          <span class="dropdown-text">By Roles</span>
-                          <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu p-2">
-                          <li>
-                            <label>
-                              <input type="checkbox" class="selectall" id="selectall" />
-                              <span class="select-text"> Select All</span>
-                            </label>
-                          </li>
-                          <li class="divider"></li>
-                          <li>
-                            <label>
-                              <input type="checkbox" class="option justone"/> country admin
-                            </label>
-                          </li>
-                          <li>
-                            <label>
-                              <input type="checkbox" class="option justone"/> area admin
-                            </label>
-                          </li>
-                          <li>
-                            <label>
-                              <input type="checkbox" class="option justone"/> user admin
-                            </label>
-                          </li>
-                        </ul>
-                      </div>
-                    </div> 
-                    <div class="col-md-2 col-6">
-                        <label class="mb-2">Account Status</label>
-                        <div class="dropdown">
-                          <button class="form-select" type="button" data-bs-toggle="dropdown">
-                            <span class="dropdown-text">Account status </span>
-                            <span class="caret"></span>
-                          </button>
-                          <ul class="dropdown-menu p-2">
-                            <li>
-                              <label>
-                                <input type="checkbox" class="selectall" id="selectall" />
-                                <span class="select-text"> Select All</span>
-                              </label>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                              <label>
-                                <input type="checkbox" class="option justone" /> Active
-                              </label>
-                            </li>
-                            <li>
-                              <label>
-                                <input type="checkbox" class="option justone"/> inactive
-                              </label>
-                            </li>
-                            <li>
-                              <label>
-                                <input type="checkbox" class="option justone"/> deactivate
-                              </label>
-                            </li>
-                            <li>
-                                <label>
-                                  <input type="checkbox" class="option justone"/> stopped
-                                </label>
-                              </li>
-                          </ul>
+                    <div class="filters row mb-4">
+                        <div class="col-md-2 col-6">
+                            <label class="mb-2 form-label">All, Countries : cities</label>
+                            <select class="form-select form-control" aria-label="Default select example">
+                                <option selected>All, Countries</option>
+                                <option value="1">USA</option>
+                                <option value="2">INDIA</option>
+                                <option value="3">Three</option>
+                            </select>
                         </div>
-                      </div> 
-                    <div class="col-md-2 col-6">
-                        <label class="mb-2">Time date</label>
-                        <input type="date" class="form-control">
+                        <div class="col-md-2 col-6">
+                            <label class="mb-2 form-label">By Roles</label>
+                            <div class="dropdown">
+                                <button class="form-select form-control" type="button" data-bs-toggle="dropdown">
+                                    <span class="dropdown-text">By Roles</span>
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu p-2">
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" class="selectall" id="selectall" />
+                                            <span class="select-text"> Select All</span>
+                                        </label>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" class="option justone" /> country admin
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" class="option justone" /> area admin
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" class="option justone" /> user admin
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-6">
+                            <label class="mb-2 form-label">Account Status</label>
+                            <div class="dropdown">
+                                <button class="form-select form-control" type="button" data-bs-toggle="dropdown">
+                                    <span class="dropdown-text">Account status </span>
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu p-2">
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" class="selectall" id="selectall" />
+                                            <span class="select-text"> Select All</span>
+                                        </label>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" class="option justone" /> Active
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" class="option justone" /> inactive
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" class="option justone" /> deactivate
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" class="option justone" /> stopped
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-6">
+                            <label class="mb-2 form-label">Time date</label>
+                            <input type="date" class="form-control">
+                        </div>
+                        <div class="col-md-2 col-6">
+                            <label class="mb-2 form-label">Date registration </label>
+                            <input type="date" class="form-control">
+                        </div>
+                        <div class="col-md-2 col-6 d-flex align-items-end">
+                            <button type="submit" class="btn btn-primary w-auto px-4">Submit</button>
+                        </div>
                     </div>
-                    <div class="col-md-2 col-6">
-                        <label class="mb-2">date registration </label>
-                        <input type="date" class="form-control">
-                    </div>
-                </div>
-
-                    <div class="card custom-card" >
+                    <div class="card custom-card">
                         <div class="card-header d-flex align-items-center justify-content-between flex-wrap gap-3">
                             <div class="row justify-content-between">
                                 <div class="col-sm-auto">
-                                  <form class="form-search">
-                                    <i class="ph-duotone ph-magnifying-glass icon-search"></i>
-                                    <input type="search" class="form-control" placeholder="Search...">
-                                    <button class="btn btn-light-secondary btn-search">Search</button>
-                                  </form>
+                                    <form class="form-search">
+                                        <i class="ph-duotone ph-magnifying-glass icon-search"></i>
+                                        <input type="search" class="form-control" placeholder="Search...">
+                                        <button class="btn btn-light-secondary btn-search">Search</button>
+                                    </form>
                                 </div>
-                              </div>
-                              <div class="col-md-2 col-6">
-                                <select class="form-select" aria-label="Default select example">
+                            </div>
+                            <div class="col-md-2 col-6">
+                                <select class="form-select form-control" aria-label="Default select example">
                                     <option selected>Sort By</option>
                                     <option value="1">latest admin</option>
                                     <option value="2">old admin</option>
-                                  </select>   
-                               </div>
+                                </select>
+                            </div>
                         </div>
-                        <div class="card-body p-0" >
-                            <div class="table-responsive" >
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
                                 <table class="table text-nowrap">
                                     <thead>
                                         <tr>
@@ -418,7 +428,7 @@
                                         <tr class="crm-contact">
                                             <td> <input class="form-check-input" type="checkbox" id="checkboxNoLabel1"
                                                     value="" aria-label="..."> </td>
-                                          
+
                                             <td> 14 </td>
                                             <td>
                                                 <span class="d-block mb-1">Lorem Ipsum is dummy</span>
@@ -433,7 +443,7 @@
                                             <td>
                                                 <span class="d-block">Approved</span>
                                             <td>
-                                               <span class="d-block"><span>10:30 AM</span><br> 30-12-2024</span>
+                                                <span class="d-block"><span>10:30 AM</span><br> 30-12-2024</span>
                                             </td>
                                             <td>
                                                 <span class="d-block mb-1">Lorem Ipsum dummy</span>
@@ -448,7 +458,7 @@
                                         <tr class="crm-contact">
                                             <td> <input class="form-check-input" type="checkbox" id="checkboxNoLabel1"
                                                     value="" aria-label="..."> </td>
-                                          
+
                                             <td> 14 </td>
                                             <td>
                                                 <span class="d-block mb-1">Lorem Ipsum is dummy</span>
@@ -463,7 +473,7 @@
                                             <td>
                                                 <span class="d-block">Approved</span>
                                             <td>
-                                               <span class="d-block"><span>10:30 AM</span><br> 30-12-2024</span>
+                                                <span class="d-block"><span>10:30 AM</span><br> 30-12-2024</span>
                                             </td>
                                             <td>
                                                 <span class="d-block mb-1">Lorem Ipsum dummy</span>
@@ -475,135 +485,13 @@
                                                 <span class="d-block mb-1">Lorem Ipsum dummy</span>
                                             </td>
                                         </tr>
-                                        <tr class="crm-contact">
-                                            <td> <input class="form-check-input" type="checkbox" id="checkboxNoLabel1"
-                                                    value="" aria-label="..."> </td>
-                                          
-                                            <td> 14 </td>
-                                            <td>
-                                                <span class="d-block mb-1">Lorem Ipsum is dummy</span>
-                                            </td>
-                                            <td>
-                                                <span class="d-block mb-1">30-12-2024</span>
-                                            </td>
-                                            <td>
-                                                <span class="d-block">admin</span>
-                                            </td>
-                                            <td> Social Media </td>
-                                            <td>
-                                                <span class="d-block">Approved</span>
-                                            <td>
-                                               <span class="d-block"><span>10:30 AM</span><br> 30-12-2024</span>
-                                            </td>
-                                            <td>
-                                                <span class="d-block mb-1">Lorem Ipsum dummy</span>
-                                            </td>
-                                            <td>
-                                                <span class="d-block mb-1">Lorem Ipsum dummy</span>
-                                            </td>
-                                            <td>
-                                                <span class="d-block mb-1">Lorem Ipsum dummy</span>
-                                            </td>
-                                        </tr>
-                                        <tr class="crm-contact">
-                                            <td> <input class="form-check-input" type="checkbox" id="checkboxNoLabel1"
-                                                    value="" aria-label="..."> </td>
-                                          
-                                            <td> 14 </td>
-                                            <td>
-                                                <span class="d-block mb-1">Lorem Ipsum is dummy</span>
-                                            </td>
-                                            <td>
-                                                <span class="d-block mb-1">30-12-2024</span>
-                                            </td>
-                                            <td>
-                                                <span class="d-block">admin</span>
-                                            </td>
-                                            <td> Social Media </td>
-                                            <td>
-                                                <span class="d-block">Approved</span>
-                                            <td>
-                                               <span class="d-block"><span>10:30 AM</span><br> 30-12-2024</span>
-                                            </td>
-                                            <td>
-                                                <span class="d-block mb-1">Lorem Ipsum dummy</span>
-                                            </td>
-                                            <td>
-                                                <span class="d-block mb-1">Lorem Ipsum dummy</span>
-                                            </td>
-                                            <td>
-                                                <span class="d-block mb-1">Lorem Ipsum dummy</span>
-                                            </td>
-                                        </tr>
-                                        <tr class="crm-contact">
-                                            <td> <input class="form-check-input" type="checkbox" id="checkboxNoLabel1"
-                                                    value="" aria-label="..."> </td>
-                                          
-                                            <td> 14 </td>
-                                            <td>
-                                                <span class="d-block mb-1">Lorem Ipsum is dummy</span>
-                                            </td>
-                                            <td>
-                                                <span class="d-block mb-1">30-12-2024</span>
-                                            </td>
-                                            <td>
-                                                <span class="d-block">admin</span>
-                                            </td>
-                                            <td> Social Media </td>
-                                            <td>
-                                                <span class="d-block">Approved</span>
-                                            <td>
-                                               <span class="d-block"><span>10:30 AM</span><br> 30-12-2024</span>
-                                            </td>
-                                            <td>
-                                                <span class="d-block mb-1">Lorem Ipsum dummy</span>
-                                            </td>
-                                            <td>
-                                                <span class="d-block mb-1">Lorem Ipsum dummy</span>
-                                            </td>
-                                            <td>
-                                                <span class="d-block mb-1">Lorem Ipsum dummy</span>
-                                            </td>
-                                        </tr>
-                                        <tr class="crm-contact">
-                                            <td> <input class="form-check-input" type="checkbox" id="checkboxNoLabel1"
-                                                    value="" aria-label="..."> </td>
-                                          
-                                            <td> 14 </td>
-                                            <td>
-                                                <span class="d-block mb-1">Lorem Ipsum is dummy</span>
-                                            </td>
-                                            <td>
-                                                <span class="d-block mb-1">30-12-2024</span>
-                                            </td>
-                                            <td>
-                                                <span class="d-block">admin</span>
-                                            </td>
-                                            <td> Social Media </td>
-                                            <td>
-                                                <span class="d-block">Approved</span>
-                                            <td>
-                                               <span class="d-block"><span>10:30 AM</span><br> 30-12-2024</span>
-                                            </td>
-                                            <td>
-                                                <span class="d-block mb-1">Lorem Ipsum dummy</span>
-                                            </td>
-                                            <td>
-                                                <span class="d-block mb-1">Lorem Ipsum dummy</span>
-                                            </td>
-                                            <td>
-                                                <span class="d-block mb-1">Lorem Ipsum dummy</span>
-                                            </td>
-                                        </tr>
-                                    </tbody>
                                 </table>
                             </div>
                         </div>
-                        <div class="card-footer border-top-0" >
-                            <div class="d-flex align-items-center" >
-                                <div > Showing 10 Entries <i
-                                        class="bi bi-arrow-right ms-2 fw-medium"></i> </div>
-                                <div class="ms-auto" >
+                        <div class="card-footer border-top-0">
+                            <div class="d-flex align-items-center">
+                                <div> Showing 10 Entries <i class="bi bi-arrow-right ms-2 fw-medium"></i> </div>
+                                <div class="ms-auto">
                                     <nav aria-label="Page navigation" class="pagination-style-5">
                                         <ul class="pagination mb-0">
                                             <li class="page-item disabled"> <a class="page-link"
@@ -622,7 +510,83 @@
                             </div>
                         </div>
                     </div>
-                    <!-- all-admin -->
+                    <!-- all-admin page-->
+
+                    <!-- New admin page-->
+                     <h4 class="mb-3">Create New admin</h4>
+                     <div class="card custom-card">
+                        <div class="card-header d-flex align-items-center justify-content-between flex-wrap gap-3">
+                            <div class="row justify-content-between">
+                                <div class="col-sm-auto">
+                                    <form class="form-search">
+                                        <i class="ph-duotone ph-magnifying-glass icon-search"></i>
+                                        <input type="search" class="form-control" placeholder="Search...">
+                                        <button class="btn btn-light-secondary btn-search">Search</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-6 text-end">
+                                <button type="button" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+                                  </svg>
+                                    Create User
+                                  </button>
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                                <table class="table text-nowrap">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"> <input class="form-check-input" type="checkbox"
+                                                    id="checkboxNoLabel" value="" aria-label="..."> </th>
+                                            <th scope="col">Admin ID</th>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Email</th>
+                                            <th scope="col">Phone</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="crm-contact">
+                                            <td> <input class="form-check-input" type="checkbox" value="" > </td>
+                                            <td> 14 </td>
+                                            <td><span class="d-block mb-1">Test Admin</span></td>
+                                            <td><span class="d-block mb-1">admin@gmail.com</span></td>
+                                            <td><span class="d-block mb-1">+123 456 789</span></td>
+                                        </tr>
+                                        <tr class="crm-contact">
+                                            <td> <input class="form-check-input" type="checkbox" value="" > </td>
+                                            <td> 14 </td>
+                                            <td><span class="d-block mb-1">Test Admin</span></td>
+                                            <td><span class="d-block mb-1">admin@gmail.com</span></td>
+                                            <td><span class="d-block mb-1">+123 456 789</span></td>
+                                        </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card-footer border-top-0">
+                            <div class="d-flex align-items-center">
+                                <div> Showing 10 Entries <i class="bi bi-arrow-right ms-2 fw-medium"></i> </div>
+                                <div class="ms-auto">
+                                    <nav aria-label="Page navigation" class="pagination-style-5">
+                                        <ul class="pagination mb-0">
+                                            <li class="page-item disabled"> <a class="page-link"
+                                                    href="javascript:void(0);"> Prev </a> </li>
+                                            <li class="page-item active"><a class="page-link"
+                                                    href="javascript:void(0);">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a>
+                                            </li>
+                                            <li class="page-item"> <a class="page-link text-primary"
+                                                    href="javascript:void(0);"> next </a> </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- New admin page-->
 
                 </div>
             </main>
@@ -631,8 +595,7 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
-   
-    
+
 </body>
 
 </html>
