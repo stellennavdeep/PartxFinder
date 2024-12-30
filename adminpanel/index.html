@@ -296,7 +296,7 @@
                     <div class="filters row mb-4">
                         <div class="col-md-2 col-6">
                             <label class="mb-2 form-label">All, Countries : cities</label>
-                            <select class="form-select form-control" aria-label="Default select example">
+                            <select class="form-select form-control text-start" aria-label="Default select example">
                                 <option selected>All, Countries</option>
                                 <option value="1">USA</option>
                                 <option value="2">INDIA</option>
@@ -306,7 +306,7 @@
                         <div class="col-md-2 col-6">
                             <label class="mb-2 form-label">By Roles</label>
                             <div class="dropdown">
-                                <button class="form-select form-control" type="button" data-bs-toggle="dropdown">
+                                <button class="form-select form-control text-start" type="button" data-bs-toggle="dropdown">
                                     <span class="dropdown-text">By Roles</span>
                                     <span class="caret"></span>
                                 </button>
@@ -339,7 +339,7 @@
                         <div class="col-md-2 col-6">
                             <label class="mb-2 form-label">Account Status</label>
                             <div class="dropdown">
-                                <button class="form-select form-control" type="button" data-bs-toggle="dropdown">
+                                <button class="form-select form-control text-start" type="button" data-bs-toggle="dropdown">
                                     <span class="dropdown-text">Account status </span>
                                     <span class="caret"></span>
                                 </button>
@@ -513,7 +513,7 @@
                     <!-- all-admin page-->
 
                     <!-- New admin page-->
-                     <h4 class="mb-3">Create New admin</h4>
+                     <h4 class="mb-3">New admin</h4>
                      <div class="card custom-card">
                         <div class="card-header d-flex align-items-center justify-content-between flex-wrap gap-3">
                             <div class="row justify-content-between">
@@ -544,22 +544,24 @@
                                             <th scope="col">Name</th>
                                             <th scope="col">Email</th>
                                             <th scope="col">Phone</th>
+                                            <th scope="col">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr class="crm-contact">
+                                        <tr>
                                             <td> <input class="form-check-input" type="checkbox" value="" > </td>
                                             <td> 14 </td>
                                             <td><span class="d-block mb-1">Test Admin</span></td>
                                             <td><span class="d-block mb-1">admin@gmail.com</span></td>
                                             <td><span class="d-block mb-1">+123 456 789</span></td>
-                                        </tr>
-                                        <tr class="crm-contact">
-                                            <td> <input class="form-check-input" type="checkbox" value="" > </td>
-                                            <td> 14 </td>
-                                            <td><span class="d-block mb-1">Test Admin</span></td>
-                                            <td><span class="d-block mb-1">admin@gmail.com</span></td>
-                                            <td><span class="d-block mb-1">+123 456 789</span></td>
+                                            <td><button type="button" class="btn p-0 me-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                                              </svg></button>
+                                              <button type="button" class="btn p-0"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                              </svg></button></td>
                                         </tr>
                                 </table>
                             </div>
@@ -586,6 +588,303 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- create-admin -->
+                    <div class="card custom-card p-4">
+                        <h4 class="mb-4">Create New admin</h4>
+                        <form class="row">
+                            <div class="mb-3 col-6">
+                                <label class="form-label">Name</label>
+                                <input type="email" class="form-control">
+                              </div>
+                            <div class="mb-3 col-6">
+                              <label class="form-label">Email*</label>
+                              <input type="email" class="form-control">
+                            </div>
+                            <div class="mb-3 col-6">
+                                <label class="form-label">Phone*</label>
+                                <input type="email" class="form-control">
+                              </div>
+                            <div class="mb-3 col-6">
+                                <label class="form-label">Tasks & authorities</label>
+                                     <div class="dropdown">
+                                         <button class="form-select form-control text-start" type="button" data-bs-toggle="dropdown">
+                                             <span class="dropdown-text">Tasks & authorities</span>
+                                             <span class="caret"></span>
+                                         </button>
+                                         <ul class="dropdown-menu p-2">
+                                             <li>
+                                                 <label>
+                                                     <input type="checkbox" class="selectall" id="selectall" />
+                                                     <span class="select-text"> Select All</span>
+                                                 </label>
+                                             </li>
+                                             <li class="divider"></li>
+                                             <li>
+                                                 <label>
+                                                     <input type="checkbox" class="option justone" /> Admin user A (Part Searcher)
+                                                 </label>
+                                             </li>
+                                             <li>
+                                                 <label>
+                                                     <input type="checkbox" class="option justone" /> Admin user B1 (Selling Parts)
+                                                 </label>
+                                             </li>
+                                             <li>
+                                                 <label>
+                                                     <input type="checkbox" class="option justone" /> Admin user C1 (Car seller)
+                                                 </label>
+                                             </li>
+                                             <li>
+                                                 <label>
+                                                     <input type="checkbox" class="option justone" /> Admin user C2 (one or more Cars seller)
+                                                 </label>
+                                             </li>
+                                             <li>
+                                                <label>
+                                                    <input type="checkbox" class="option justone" />Admin user B2 (Car buyer)
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" class="option justone" />Admin user B (Selling Recycling metals)
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" class="option justone" />Admin user D (Selling Recycling metals)
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" class="option justone" />Area Admin
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" class="option justone" />Country Admin
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" class="option justone" />General Admin
+                                                </label>
+                                            </li>
+                                         </ul>
+                                     </div>
+                            </div>
+                            <div class="mb-3 col-6">
+                                <label class="form-label">Password</label>
+                                <input type="password" class="form-control">
+                              </div>
+                              <div class="mb-3 col-6">
+                                <label class="form-label">Confirm Password</label>
+                                <input type="password" class="form-control">
+                              </div>
+
+                            <div class="col-12">
+                                <h4 class="mb-3">Admin user A (Part Searcher) </h4>
+                                <div class="card custom-card">
+                                   <div class="card-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="Searching">Add and activate a Parts Searching Request on behalf of user A</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="Searching">Activate incoming search requests )according to the grant validity for a region and country = GVRC)</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="Searching">Edit a search request on behalf of user A GVRC</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="Searching">Stop a search request GVRC</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="Searching">Extend a search requests GVRC</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="Searching">Delete a search requests GVRC</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="Searching">Messaging user A GVRC</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="Searching">View incoming Search Requests GVRC</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="Searching">View responses to incoming search requests GVRC</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="GVRCs">View statistics according to the type of statistics and the GVRC</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="database">Add new car types to the database</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="GVRC1">Block user A's phones GVRC</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="GVRC">Unblock user A's phones GVRC</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="record">View admin user A activities record GVRC</label>
+                                        </div>
+                                   </div>
+                                
+                               </div>   
+                            </div>
+                            <div class="col-12">
+                                <h4 class="mb-3">Admin user B1 (Selling Parts)</h4>
+                                <div class="card custom-card">
+                                   <div class="card-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="Searching">Register a new account of user B1 ) according to the grant validity for a region and country = GVRC)</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="Searching">Add new services B2 & B3 for user B1 account GVRC</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="Searching">Activate a user B1 account GVRC</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="Searching">Edit a user B1 account GVRC </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="Searching">Deactivate a user B1 account GVRC</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="Searching">Extend a user B1 account GVRC</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="Searching">Add, update, delate Favourites on behalf of user B1 account GVRC</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="Searching">Respond on user A request on behalf of user B1 account GVRC</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="Searching">View respond record of user B1 account GVRC</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="GVRCs">View selling record of user B1 account GVRC</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="database">View login date time, online record of user B1 account GVRC</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="GVRC1">Messaging user B1 account GVRC</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="GVRC">Reloading Text message # for user B1 account GVRC </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="record">View statistics according to the type of statistics and the GVRC</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="record">View admin user B1 activities record GVRC</label>
+                                        </div>
+                                   </div>
+                                
+                               </div>   
+                            </div>
+                            <div class="col-12">
+                                <h4 class="mb-3">Admin user C1 (Car seller)</h4>
+                                <div class="card custom-card">
+                                   <div class="card-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="Searching"> Add and activate a Selling Car request on behalf of user C1
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="Searching"> Activate incoming Selling Car request )according to the grant validity for a region and country = GVRC)</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="Searching">Edit a Selling Car request on behalf of user A GVRC</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="Searching">Stop a Selling Car request GVRC</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="Searching">Extend Selling Car request GVRC</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="Searching">Delete a Selling Car request GVRC</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="Searching">Messaging user C1 GVRC </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="Searching">View incoming Selling Car request GVRC</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="Searching">View responses to incoming Selling Car request GVRC</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="GVRCs">View Selling Car request statistics according to the type of statistics and the GVRC</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="database">Add new car types to the database</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="GVRC1">Block user C1's phones GVRC</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="">
+                                            <label class="form-check-label" for="GVRC">Unblock user C1's phones GVRC </label>
+                                        </div>
+                                   </div>
+                                
+                               </div>   
+                            </div>
+
+                            <div class="text-end">
+                                <button type="submit" class="btn btn-primary w-auto px-4">Submit</button>
+                            </div>
+                        </form>
+                        
+                    </div>
+                     
+                  
+
                     <!-- New admin page-->
 
                 </div>
@@ -595,6 +894,7 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
+
 
 </body>
 
