@@ -45,6 +45,9 @@ h4 {
     min-width: 230px;
     background: var(--bs-dark);
     transition: all 0.35s ease-in-out;
+    height: 100vh;
+    position: sticky;
+    top: 0;
 }
 
 .main {
