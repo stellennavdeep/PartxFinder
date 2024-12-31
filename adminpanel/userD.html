@@ -38,7 +38,7 @@
                         </a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link collapsed" data-bs-target="#posts"><svg
+                        <a href="admin.html" class="sidebar-link collapsed" data-bs-target="#posts"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-people" viewBox="0 0 16 16">
                                 <path
@@ -56,6 +56,7 @@
                             Create Admin
                         </a>
                     </li>
+                    
                     <li class="sidebar-item">
                         <a href="statistics.html" class="sidebar-link collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="16"
                                 height="16" fill="currentColor" class="bi bi-bar-chart" viewBox="0 0 16 16">
@@ -146,101 +147,9 @@
             <main class="content px-3 py-4">
                 <div class="container-fluid">
 
-                    <h4 class="mb-3">All Admins</h4>
+                    <h4 class="mb-3">User D</h4>
                     <!-- filter -->
-                    <div class="filters row mb-4">
-                        <div class="col-md-2 col-6">
-                            <label class="mb-2 form-label">All, Countries : cities</label>
-                            <select class="form-select form-control text-start" aria-label="Default select example">
-                                <option selected>All, Countries</option>
-                                <option value="1">USA</option>
-                                <option value="2">INDIA</option>
-                                <option value="3">Three</option>
-                            </select>
-                        </div>
-                        <div class="col-md-2 col-6">
-                            <label class="mb-2 form-label">By Roles</label>
-                            <div class="dropdown">
-                                <button class="form-select form-control text-start" type="button" data-bs-toggle="dropdown">
-                                    <span class="dropdown-text">By Roles</span>
-                                    <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu p-2">
-                                    <li>
-                                        <label>
-                                            <input type="checkbox" class="selectall" id="selectall" />
-                                            <span class="select-text"> Select All</span>
-                                        </label>
-                                    </li>
-                                    <li class="divider"></li>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox" class="option justone" /> country admin
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox" class="option justone" /> area admin
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox" class="option justone" /> user admin
-                                        </label>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-6">
-                            <label class="mb-2 form-label">Account Status</label>
-                            <div class="dropdown">
-                                <button class="form-select form-control text-start" type="button" data-bs-toggle="dropdown">
-                                    <span class="dropdown-text">Account status </span>
-                                    <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu p-2">
-                                    <li>
-                                        <label>
-                                            <input type="checkbox" class="selectall" id="selectall" />
-                                            <span class="select-text"> Select All</span>
-                                        </label>
-                                    </li>
-                                    <li class="divider"></li>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox" class="option justone" /> Active
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox" class="option justone" /> inactive
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox" class="option justone" /> deactivate
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label>
-                                            <input type="checkbox" class="option justone" /> stopped
-                                        </label>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-6">
-                            <label class="mb-2 form-label">Time date</label>
-                            <input type="date" class="form-control">
-                        </div>
-                        <div class="col-md-2 col-6">
-                            <label class="mb-2 form-label">Date registration </label>
-                            <input type="date" class="form-control">
-                        </div>
-                        <div class="col-md-2 col-6 d-flex align-items-end">
-                            <button type="submit" class="btn btn-primary w-auto px-4">Submit</button>
-                        </div>
-                    </div>
+                 
                     <div class="card custom-card">
                         <div class="card-header d-flex align-items-center justify-content-between flex-wrap gap-3">
                             <div class="row justify-content-between">
@@ -266,18 +175,36 @@
                                     <thead>
                                         <tr>
                                             <th scope="col"> <input class="form-check-input" type="checkbox"
-                                                    id="checkboxNoLabel" value="" aria-label="..."> </th>
-                                            <th scope="col">admin ID</th>
+                                                    id="checkboxNoLabel" value="" aria-label="...">  </th>
+                                            <th scope="col">Account ID</th>
                                             <th scope="col">Area ,Country</th>
-                                            <th scope="col">Date of register</th>
-                                            <th scope="col">Approved by</th>
-                                            <th scope="col">Admin roles activities B1,B2,B3</th>
-                                            <th scope="col">Admin Account status</th>
-                                            <th scope="col">Time date of log in</th>
-                                            <th scope="col">admin account update</th>
-                                            <th scope="col">last activities & tasks done</th>
-                                            <th scope="col">admin Account details & update</th>
-                                            <th scope="col">Action</th>
+                                            <th scope="col">User C2 Account
+                                                . status
+                                                Active, inactive,
+                                                expired,
+                                                Deactivated
+                                                stopped
+                                                </th>
+                                            <th scope="col">Time date of
+                                                log in
+                                                = online</th>
+                                            <th scope="col">BY latest
+                                                user C2
+                                                offers </th>
+                                            <th scope="col">BY latest
+                                                user C2
+                                                Auction </th>
+                                            <th scope="col">User C2
+                                                Account
+                                                details </th>
+                                            <th scope="col">User Account update
+                                                = Activated
+                                                Extended
+                                                Deactivated
+                                                Stopped
+                                                Updating contacts</th>
+                                            <th scope="col">By
+                                                admin</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -290,7 +217,7 @@
                                                 <span class="d-block mb-1">Lorem Ipsum is dummy</span>
                                             </td>
                                             <td>
-                                                <span class="d-block mb-1">30-12-2024</span>
+                                                <span class="d-block mb-1">Active</span>
                                             </td>
                                             <td>
                                                 <span class="d-block">admin</span>
@@ -299,7 +226,7 @@
                                             <td>
                                                 <span class="d-block">Approved</span>
                                             <td>
-                                                <span class="d-block"><span>10:30 AM</span><br> 30-12-2024</span>
+                                                <span class="d-block">Lorem Ipsum dummy</span>
                                             </td>
                                             <td>
                                                 <span class="d-block mb-1">Lorem Ipsum dummy</span>
@@ -307,17 +234,7 @@
                                             <td>
                                                 <span class="d-block mb-1">Lorem Ipsum dummy</span>
                                             </td>
-                                            <td>
-                                                <span class="d-block mb-1">Lorem Ipsum dummy</span>
-                                            </td>
-                                            <td><button type="button" class="btn p-0 me-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                                                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
-                                              </svg></button>
-                                              <button type="button" class="btn p-0"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
-                                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
-                                              </svg></button></td>
+                                          
                                         </tr>
                                         <tr class="crm-contact">
                                             <td> <input class="form-check-input" type="checkbox" id="checkboxNoLabel1"
@@ -328,7 +245,7 @@
                                                 <span class="d-block mb-1">Lorem Ipsum is dummy</span>
                                             </td>
                                             <td>
-                                                <span class="d-block mb-1">30-12-2024</span>
+                                                <span class="d-block mb-1">inactive</span>
                                             </td>
                                             <td>
                                                 <span class="d-block">admin</span>
@@ -337,7 +254,7 @@
                                             <td>
                                                 <span class="d-block">Approved</span>
                                             <td>
-                                                <span class="d-block"><span>10:30 AM</span><br> 30-12-2024</span>
+                                                <span class="d-block">Lorem Ipsum dummy</span>
                                             </td>
                                             <td>
                                                 <span class="d-block mb-1">Lorem Ipsum dummy</span>
@@ -345,17 +262,91 @@
                                             <td>
                                                 <span class="d-block mb-1">Lorem Ipsum dummy</span>
                                             </td>
+                                           
+                                        </tr>
+                                        <tr class="crm-contact">
+                                            <td> <input class="form-check-input" type="checkbox" id="checkboxNoLabel1"
+                                                    value="" aria-label="..."> </td>
+
+                                            <td> 14 </td>
+                                            <td>
+                                                <span class="d-block mb-1">Lorem Ipsum is dummy</span>
+                                            </td>
+                                            <td>
+                                                <span class="d-block mb-1">inactive</span>
+                                            </td>
+                                            <td>
+                                                <span class="d-block">admin</span>
+                                            </td>
+                                            <td> Social Media </td>
+                                            <td>
+                                                <span class="d-block">Approved</span>
+                                            <td>
+                                                <span class="d-block">Lorem Ipsum dummy</span>
+                                            </td>
                                             <td>
                                                 <span class="d-block mb-1">Lorem Ipsum dummy</span>
                                             </td>
-                                            <td><button type="button" class="btn p-0 me-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                                                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
-                                              </svg></button>
-                                              <button type="button" class="btn p-0"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
-                                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
-                                              </svg></button></td>
+                                            <td>
+                                                <span class="d-block mb-1">Lorem Ipsum dummy</span>
+                                            </td>
+                                           
+                                        </tr>
+                                        <tr class="crm-contact">
+                                            <td> <input class="form-check-input" type="checkbox" id="checkboxNoLabel1"
+                                                    value="" aria-label="..."> </td>
+
+                                            <td> 14 </td>
+                                            <td>
+                                                <span class="d-block mb-1">Lorem Ipsum is dummy</span>
+                                            </td>
+                                            <td>
+                                                <span class="d-block mb-1">inactive</span>
+                                            </td>
+                                            <td>
+                                                <span class="d-block">admin</span>
+                                            </td>
+                                            <td> Social Media </td>
+                                            <td>
+                                                <span class="d-block">Approved</span>
+                                            <td>
+                                                <span class="d-block">Lorem Ipsum dummy</span>
+                                            </td>
+                                            <td>
+                                                <span class="d-block mb-1">Lorem Ipsum dummy</span>
+                                            </td>
+                                            <td>
+                                                <span class="d-block mb-1">Lorem Ipsum dummy</span>
+                                            </td>
+                                           
+                                        </tr>
+                                        <tr class="crm-contact">
+                                            <td> <input class="form-check-input" type="checkbox" id="checkboxNoLabel1"
+                                                    value="" aria-label="..."> </td>
+
+                                            <td> 14 </td>
+                                            <td>
+                                                <span class="d-block mb-1">Lorem Ipsum is dummy</span>
+                                            </td>
+                                            <td>
+                                                <span class="d-block mb-1">inactive</span>
+                                            </td>
+                                            <td>
+                                                <span class="d-block">admin</span>
+                                            </td>
+                                            <td> Social Media </td>
+                                            <td>
+                                                <span class="d-block">Approved</span>
+                                            <td>
+                                                <span class="d-block">Lorem Ipsum dummy</span>
+                                            </td>
+                                            <td>
+                                                <span class="d-block mb-1">Lorem Ipsum dummy</span>
+                                            </td>
+                                            <td>
+                                                <span class="d-block mb-1">Lorem Ipsum dummy</span>
+                                            </td>
+                                           
                                         </tr>
                                 </table>
                             </div>
@@ -382,8 +373,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- all-admin page-->
-
+                 
                 </div>
             </main>
 

@@ -33,7 +33,7 @@ h4 {
 }
 
 /* Layout for admin dashboard skeleton */
-
+table th, table td { border: 1px solid #e5e5e5; }
 .wrapper {
     align-items: stretch;
     display: flex;
@@ -47,6 +47,7 @@ h4 {
     transition: all 0.35s ease-in-out;
     height: 100vh;
     position: sticky;
+    overflow-y: overlay;
     top: 0;
 }
 
@@ -78,6 +79,7 @@ h4 {
     margin-bottom: 0;
     padding-left: 0;
     margin-left: 0;
+    padding-bottom: 30px;
 }
 
 a.sidebar-link {
@@ -199,8 +201,8 @@ nav.navbar span.navbar-toggler-icon { filter: invert(1) brightness(0.0);}
 
 
 
-
-
+/* login */
+.login_img img{min-height: 100vh;}
 
 
 

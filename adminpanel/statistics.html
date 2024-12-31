@@ -91,7 +91,7 @@
                             Control panel
                         </a>
                     </li>
-                  
+                   
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link collapsed" data-bs-target="#auth" data-bs-toggle="collapse"
                             aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -147,48 +147,124 @@
             <main class="content px-3 py-4">
                 <div class="container-fluid">
                     <!-- New admin page-->
-                     <h4 class="mb-3">General Settings</h4>
+                     <h4 class="mb-3">Statistics</h4>
 
                     <!-- create-admin -->
                     <div class="card custom-card p-4">
-                        <form class="row">
-                            <div class="mb-3 col-6">
-                                <label class="form-label">Name</label>
-                                <input type="email" class="form-control">
-                              </div>
-                            <div class="mb-3 col-6">
-                              <label class="form-label">Email</label>
-                              <input type="email" class="form-control">
-                            </div>
-                            <div class="mb-3 col-6">
-                                <label class="form-label">Profile</label>
-                                <input type="file" class="form-control">
-                            </div>
-                            <div class="mb-3 col-6">
-                                <label class="form-label">Logo</label>
-                                <input type="file" class="form-control">
-                            </div>
-                           
-                            <div class="mb-3 col-6">
-                                <label class="form-label">Password</label>
-                                <input type="password" class="form-control">
-                              </div>
-                              <div class="mb-3 col-6">
-                                <label class="form-label">Confirm Password</label>
-                                <input type="password" class="form-control">
-                              </div>
-
-                            <div class="text-end">
-                                <button type="submit" class="btn btn-primary w-auto px-4">Save</button>
-                            </div>
-                        </form>
-                        
-                    </div>
+                        <div class="mb-4 col-12 col-md-3">
+                            <label class="form-label">Which statistic do you want to view?</label>
+                                 <div class="dropdown">
+                                     <button class="form-select form-control text-start" type="button" data-bs-toggle="dropdown">
+                                         <span class="dropdown-text">General</span>
+                                         <span class="caret"></span>
+                                     </button>
+                                     <ul class="dropdown-menu p-2">
+                                         <li>
+                                             <label>
+                                                 <input type="checkbox" class="selectall" id="selectall" />
+                                                 <span class="select-text"> Select All</span>
+                                             </label>
+                                         </li>
+                                         <li class="divider"></li>
+                                         <li>
+                                             <label>
+                                                 <input type="checkbox" class="option justone" /> General
+                                             </label>
+                                         </li>
+                                         <li>
+                                             <label>
+                                                 <input type="checkbox" class="option justone" /> C1
+                                             </label>
+                                         </li>
+                                         <li>
+                                             <label>
+                                                 <input type="checkbox" class="option justone" /> C2
+                                             </label>
+                                         </li>
+                                         <li>
+                                             <label>
+                                                 <input type="checkbox" class="option justone" /> Selling Part
+                                             </label>
+                                         </li>
+                                         <li>
+                                            <label>
+                                                <input type="checkbox" class="option justone" /> Selling Metals
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" class="option justone" /> Visitors
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" class="option justone" /> Partnership
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" class="option justone" /> Partnership C2
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" class="option justone" /> Partnership Car Dealers
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" class="option justone" /> Partnership D
+                                            </label>
+                                        </li>
+                                     </ul>
+                                 </div>
+                        </div>
                      
-                  
-
-                    <!-- New admin page-->
-
+                        <div class="col-12 mt-2">
+                                <h4 class="mb-3">GENERAL (C1 & C2)</h4>
+                            <div class="card custom-card">
+                                <div class="card-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="">
+                                        <label class="form-check-label" for="Searching">Number of offers for selling car in General (IN open market for both user A and C2 and the auctions)</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="">
+                                        <label class="form-check-label" for="Searching">Number of offers for selling car but not generate any respond</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="">
+                                        <label class="form-check-label" for="Searching">Number of respond to cars' offers</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="">
+                                        <label class="form-check-label" for="Searching">Number of car been sold </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="">
+                                        <label class="form-check-label" for="Searching">Number of revenue ($) from car been sold</label>
+                                    </div>
+                                </div>
+                            
+                            </div>   
+                        </div>
+                        <div class="col-12 mt-2">
+                            <h4 class="mb-3">C1</h4>
+                        <div class="card custom-card">
+                            <div class="card-body">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="">
+                                    <label class="form-check-label" for="Searching">Number of offers for selling car in Open market for user C</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="">
+                                    <label class="form-check-label" for="Searching">Number of offers for selling car but not generate any respond for user C</label>
+                                </div>
+                            </div>
+                        </div>   
+                         </div>
+                       
+                    </div>
                 </div>
             </main>
 
