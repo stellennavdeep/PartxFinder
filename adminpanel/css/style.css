@@ -193,7 +193,8 @@ nav.navbar span.navbar-toggler-icon { filter: invert(1) brightness(0.0);}
 .card-body td { color: #222; }
 .form-search {position: relative;display: inline-flex; box-shadow: unset !important;}
 .form-search .icon-search { position: absolute; top: 11px; left: 14px; font-size: 20px; opacity: 0.4; }
-.form-search .btn-search { display: inline-flex ; align-items: center; justify-content: center; border-radius: 0 4px 4px 0; height: 100%; background: #d66a30 !important; font-size: 12px; padding: 8px; font-weight: 500; color: #fff; }
+.form-search .btn-search { display: inline-flex ; align-items: center; justify-content: center; border-radius: 0 4px 4px 0; height: 100%; background: #2f4858 !important; font-size: 12px; padding: 8px; font-weight: 500; color: #fff; }
+.form-search .btn-search:hover{opacity: 0.8;}
 .form-search input{outline: unset; font-size: 14px; box-shadow: unset !important; border-radius: 4px 0 0 4px;}
 
 .form-check ul { padding: 0; }
