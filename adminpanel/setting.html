@@ -146,10 +146,7 @@
             </nav>
             <main class="content px-3 py-4">
                 <div class="container-fluid">
-                    <!-- New admin page-->
                      <h4 class="mb-3">General Settings</h4>
-
-                    <!-- create-admin -->
                     <div class="card custom-card p-4">
                         <form class="row">
                             <div class="mb-3 col-6">
@@ -172,11 +169,113 @@
                             <div class="mb-3 col-6">
                                 <label class="form-label">Password</label>
                                 <input type="password" class="form-control">
-                              </div>
-                              <div class="mb-3 col-6">
-                                <label class="form-label">Confirm Password</label>
-                                <input type="password" class="form-control">
-                              </div>
+                            </div>
+                            <div class="mb-3 col-6">
+                            <label class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control">
+                            </div>
+
+                            <div class="mb-3 col-6">
+                                <label class="form-label">country</label>
+                                <div class="dropdown">
+                                    <button class="form-select form-control text-start" type="button"
+                                        data-bs-toggle="dropdown">
+                                        <span class="dropdown-text">Select country</span>
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu p-2">
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" class="selectall" id="selectall" />
+                                                <span class="select-text"> Select All</span>
+                                            </label>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" class="option justone" /> USA
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" class="option justone" /> Japan
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" class="option justone" /> Dubai
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" class="option justone" /> Canada
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" class="option justone" /> Saudi Arabia
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" class="option justone" /> Uman
+                                            </label>
+                                        </li>
+                                       
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="mb-3 col-6">
+                                <label class="form-label">Area</label>
+                                <div class="dropdown">
+                                    <button class="form-select form-control text-start" type="button"
+                                        data-bs-toggle="dropdown">
+                                        <span class="dropdown-text">Select Area</span>
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu p-2">
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" class="selectall" id="selectall" />
+                                                <span class="select-text"> Select All</span>
+                                            </label>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" class="option justone" /> Anchorage
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" class="option justone" /> Texas
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" class="option justone" /> West Virginia
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" class="option justone" /> South Carolina
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" class="option justone" /> New Mexico
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox" class="option justone" /> Wyoming
+                                            </label>
+                                        </li>
+                                       
+                                    </ul>
+                                </div>
+                            </div>
 
                             <div class="text-end">
                                 <button type="submit" class="btn btn-primary w-auto px-4">Save</button>
@@ -185,10 +284,102 @@
                         
                     </div>
                      
-                  
+                    <div class="card custom-card">
+                        <div class="card-header d-flex align-items-center justify-content-between flex-wrap gap-3">
+                            <div class="row justify-content-between">
+                                <div class="col-sm-auto">
+                                    <form class="form-search">
+                                        <i class="ph-duotone ph-magnifying-glass icon-search"></i>
+                                        <input type="search" class="form-control" placeholder="Search...">
+                                        <button class="btn btn-light-secondary btn-search">Search</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-6">
+                                <select class="form-select form-control" aria-label="Default select example">
+                                    <option selected>Sort By</option>
+                                    <option value="1">latest admin</option>
+                                    <option value="2">old admin</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                                <table class="table text-nowrap">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"> <input class="form-check-input" type="checkbox"
+                                                    id="checkboxNoLabel" value="" aria-label="..."> </th>
+                                            <th scope="col">Country</th>
+                                            <th scope="col">Area</th>
+                                            <th scope="col">Action</th>
+                                          
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="crm-contact">
+                                            <td> <input class="form-check-input" type="checkbox" id="checkboxNoLabel1"
+                                                    value="" aria-label="..."> </td>
 
-                    <!-- New admin page-->
+                                            <td> USA </td>
+                                            <td>
+                                                <span class="d-block mb-1">Dubai</span>
+                                            </td>
+                                        
+                                          
+                                            <td><button type="button" class="btn p-0 me-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                                              </svg></button>
+                                              <button type="button" class="btn p-0"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                              </svg></button></td>
+                                        </tr>
+                                        <tr class="crm-contact">
+                                            <td> <input class="form-check-input" type="checkbox" id="checkboxNoLabel1"
+                                                    value="" aria-label="..."> </td>
 
+                                            <td> USA </td>
+                                            <td>
+                                                <span class="d-block mb-1">Dubai</span>
+                                            </td>
+                                        
+                                          
+                                            <td><button type="button" class="btn p-0 me-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                                              </svg></button>
+                                              <button type="button" class="btn p-0"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                              </svg></button></td>
+                                        </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card-footer border-top-0">
+                            <div class="d-flex align-items-center">
+                                <div> Showing 10 Entries <i class="bi bi-arrow-right ms-2 fw-medium"></i> </div>
+                                <div class="ms-auto">
+                                    <nav aria-label="Page navigation" class="pagination-style-5">
+                                        <ul class="pagination mb-0">
+                                            <li class="page-item disabled"> <a class="page-link"
+                                                    href="javascript:void(0);"> Prev </a> </li>
+                                            <li class="page-item active"><a class="page-link"
+                                                    href="javascript:void(0);">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a>
+                                            </li>
+                                            <li class="page-item"> <a class="page-link text-primary"
+                                                    href="javascript:void(0);"> next </a> </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </main>
 
