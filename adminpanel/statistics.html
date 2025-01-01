@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
+    <title>Statistics</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
@@ -265,62 +265,355 @@
                          <div class="card custom-card mt-3">
                             <div class="card-body p-0">
                                 <div class="table-responsive">
-                                    <table class="table text-nowrap">
+                                    <table class="table text-nowrap mb-0">
                                         <thead>
                                             <tr>
-                                                <th scope="col"> <input class="form-check-input" type="checkbox"
-                                                        id="checkboxNoLabel" value="" aria-label="..."> </th>
-                                                <th scope="col">admin ID</th>
+                                                <th scope="col">Name</th>
                                                 <th scope="col">Area ,Country</th>
-                                                <th scope="col">Date of register</th>
-                                                <th scope="col">Approved by</th>
-                                                <th scope="col">Admin roles activities B1,B2,B3</th>
-                                                <th scope="col">Admin Account status</th>
-                                                <th scope="col">Time date of log in</th>
-                                                <th scope="col">admin account update</th>
-                                                <th scope="col">last activities & tasks done</th>
-                                                <th scope="col">admin Account details & update</th>
+                                                <th scope="col">Brand</th>
+                                                <th scope="col">Date</th>
+                                                <th scope="col">List</th>
                                                 <th scope="col">Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr class="crm-contact">
-                                                <td> <input class="form-check-input" type="checkbox" id="checkboxNoLabel1"
-                                                        value="" aria-label="..."> </td>
-    
-                                                <td> 14 </td>
+                                                <td> Number of requests for BUYING PART </td>
                                                 <td>
-                                                    <span class="d-block mb-1">Lorem Ipsum is dummy</span>
+                                                    <select class="form-select form-control text-start mb-2" aria-label="Default select example">
+                                                        <option selected>All, Countries</option>
+                                                        <option value="1">USA</option>
+                                                        <option value="2">INDIA</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+
+                                                    <select class="form-select form-control text-start mb-2" aria-label="Default select example">
+                                                        <option selected>Choose City</option>
+                                                        <option value="1">USA</option>
+                                                        <option value="2">INDIA</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
                                                 </td>
                                                 <td>
-                                                    <span class="d-block mb-1">30-12-2024</span>
+                                                    <select class="form-select form-control text-start mb-2" aria-label="Default select example">
+                                                        <option selected>All Brands</option>
+                                                        <option value="1">USA</option>
+                                                        <option value="2">INDIA</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+
+                                                    <select class="form-select form-control text-start mb-2" aria-label="Default select example">
+                                                        <option selected>All Models</option>
+                                                        <option value="1">USA</option>
+                                                        <option value="2">INDIA</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                    <select class="form-select form-control text-start mb-2" aria-label="Default select example">
+                                                        <option selected>Choose Year</option>
+                                                        <option value="1">USA</option>
+                                                        <option value="2">INDIA</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                    <select class="form-select form-control text-start mb-2" aria-label="Default select example">
+                                                        <option selected>Choose Year</option>
+                                                        <option value="1">USA</option>
+                                                        <option value="2">INDIA</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
                                                 </td>
                                                 <td>
-                                                    <span class="d-block">admin</span>
+                                                  <div class="mb-2">
+                                                    <label>From Date</label>
+                                                    <input type="date" class="form-control">
+                                                  </div>
+                                                  <div class="mb-2">
+                                                    <label>To Date</label>
+                                                    <input type="date" class="form-control">
+                                                  </div>
                                                 </td>
-                                                <td> Social Media </td>
-                                                <td>
-                                                    <span class="d-block">Approved</span>
-                                                <td>
-                                                    <span class="d-block"><span>10:30 AM</span><br> 30-12-2024</span>
+                                                <td> <span class="bg-danger btn text-white">33015</span>
+                                                    <label class="d-block mt-2">List of Countries</label>
+                                                    <ul class="mt-3">
+                                                        <li>• 15</li>
+                                                        <li>• KSA-32723</li>
+                                                        <li>• BH-238</li>
+                                                        <li>• QA-7</li>
+                                                        <li>• KW-14</li>
+                                                        <li>• OM-18</li>
+                                                    </ul>
                                                 </td>
                                                 <td>
-                                                    <span class="d-block mb-1">Lorem Ipsum dummy</span>
+                                                    <a href="">Click for details</a>
+                                                </td>
+                                            </tr>
+                                     
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card custom-card mt-3">
+                            <div class="card-body p-0">
+                                <div class="table-responsive">
+                                    <table class="table text-nowrap mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Name</th>
+                                                <th scope="col">Area ,Country</th>
+                                                <th scope="col">Brand</th>
+                                                <th scope="col">Date</th>
+                                                <th scope="col">List</th>
+                                                <th scope="col">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="crm-contact">
+                                                <td> Number of respond to parts' requests </td>
+                                                <td>
+                                                    <select class="form-select form-control text-start mb-2" aria-label="Default select example">
+                                                        <option selected>All, Countries</option>
+                                                        <option value="1">USA</option>
+                                                        <option value="2">INDIA</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+
+                                                    <select class="form-select form-control text-start mb-2" aria-label="Default select example">
+                                                        <option selected>Choose City</option>
+                                                        <option value="1">USA</option>
+                                                        <option value="2">INDIA</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
                                                 </td>
                                                 <td>
-                                                    <span class="d-block mb-1">Lorem Ipsum dummy</span>
+                                                    <select class="form-select form-control text-start mb-2" aria-label="Default select example">
+                                                        <option selected>All Brands</option>
+                                                        <option value="1">USA</option>
+                                                        <option value="2">INDIA</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+
+                                                    <select class="form-select form-control text-start mb-2" aria-label="Default select example">
+                                                        <option selected>All Models</option>
+                                                        <option value="1">USA</option>
+                                                        <option value="2">INDIA</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                    <select class="form-select form-control text-start mb-2" aria-label="Default select example">
+                                                        <option selected>Choose Year</option>
+                                                        <option value="1">USA</option>
+                                                        <option value="2">INDIA</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                    <select class="form-select form-control text-start mb-2" aria-label="Default select example">
+                                                        <option selected>Choose Year</option>
+                                                        <option value="1">USA</option>
+                                                        <option value="2">INDIA</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
                                                 </td>
                                                 <td>
-                                                    <span class="d-block mb-1">Lorem Ipsum dummy</span>
+                                                  <div class="mb-2">
+                                                    <label>From Date</label>
+                                                    <input type="date" class="form-control">
+                                                  </div>
+                                                  <div class="mb-2">
+                                                    <label>To Date</label>
+                                                    <input type="date" class="form-control">
+                                                  </div>
                                                 </td>
-                                                <td><a href="edit-admin.html" class="btn p-0 me-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                                                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
-                                                  </svg></a>
-                                                  <button type="button" class="btn p-0"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                                                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
-                                                    <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
-                                                  </svg></button></td>
+                                                <td> <span class="bg-danger btn text-white">0</span>
+                                                    <label class="d-block mt-2">List of Countries</label>
+                                                    <ul class="mt-3">
+                                                        <li>• 15</li>
+                                                        <li>• KSA-32723</li>
+                                                        <li>• BH-238</li>
+                                                        <li>• QA-7</li>
+                                                        <li>• KW-14</li>
+                                                        <li>• OM-18</li>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <a href="">Click for details</a>
+                                                </td>
+                                            </tr>
+                                     
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card custom-card mt-3">
+                            <div class="card-body p-0">
+                                <div class="table-responsive">
+                                    <table class="table text-nowrap mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Name</th>
+                                                <th scope="col">Area ,Country</th>
+                                                <th scope="col">Brand</th>
+                                                <th scope="col">Date</th>
+                                                <th scope="col">List</th>
+                                                <th scope="col">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="crm-contact">
+                                                <td> Number of parts been requested </td>
+                                                <td>
+                                                    <select class="form-select form-control text-start mb-2" aria-label="Default select example">
+                                                        <option selected>All, Countries</option>
+                                                        <option value="1">USA</option>
+                                                        <option value="2">INDIA</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+
+                                                    <select class="form-select form-control text-start mb-2" aria-label="Default select example">
+                                                        <option selected>Choose City</option>
+                                                        <option value="1">USA</option>
+                                                        <option value="2">INDIA</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select class="form-select form-control text-start mb-2" aria-label="Default select example">
+                                                        <option selected>All Brands</option>
+                                                        <option value="1">USA</option>
+                                                        <option value="2">INDIA</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+
+                                                    <select class="form-select form-control text-start mb-2" aria-label="Default select example">
+                                                        <option selected>All Models</option>
+                                                        <option value="1">USA</option>
+                                                        <option value="2">INDIA</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                    <select class="form-select form-control text-start mb-2" aria-label="Default select example">
+                                                        <option selected>Choose Year</option>
+                                                        <option value="1">USA</option>
+                                                        <option value="2">INDIA</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                    <select class="form-select form-control text-start mb-2" aria-label="Default select example">
+                                                        <option selected>Choose Year</option>
+                                                        <option value="1">USA</option>
+                                                        <option value="2">INDIA</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                  <div class="mb-2">
+                                                    <label>From Date</label>
+                                                    <input type="date" class="form-control">
+                                                  </div>
+                                                  <div class="mb-2">
+                                                    <label>To Date</label>
+                                                    <input type="date" class="form-control">
+                                                  </div>
+                                                </td>
+                                                <td> <span class="bg-danger btn text-white">45745</span>
+                                                    <label class="d-block mt-2">List of Countries</label>
+                                                    <ul class="mt-3">
+                                                        <li>• 15</li>
+                                                        <li>• KSA-45338</li>
+                                                        <li>• BH-331</li>
+                                                        <li>• QA-8</li>
+                                                        <li>• KW-19</li>
+                                                        <li>• OM-33</li>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <a href="">Click for details</a>
+                                                </td>
+                                            </tr>
+                                     
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card custom-card mt-3">
+                            <div class="card-body p-0">
+                                <div class="table-responsive">
+                                    <table class="table text-nowrap mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Name</th>
+                                                <th scope="col">Area ,Country</th>
+                                                <th scope="col">Brand</th>
+                                                <th scope="col">Date</th>
+                                                <th scope="col">List</th>
+                                                <th scope="col">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="crm-contact">
+                                                <td> Number of requested parts but not generate any respond </td>
+                                                <td>
+                                                    <select class="form-select form-control text-start mb-2" aria-label="Default select example">
+                                                        <option selected>All, Countries</option>
+                                                        <option value="1">USA</option>
+                                                        <option value="2">INDIA</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+
+                                                    <select class="form-select form-control text-start mb-2" aria-label="Default select example">
+                                                        <option selected>Choose City</option>
+                                                        <option value="1">USA</option>
+                                                        <option value="2">INDIA</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select class="form-select form-control text-start mb-2" aria-label="Default select example">
+                                                        <option selected>All Brands</option>
+                                                        <option value="1">USA</option>
+                                                        <option value="2">INDIA</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+
+                                                    <select class="form-select form-control text-start mb-2" aria-label="Default select example">
+                                                        <option selected>All Models</option>
+                                                        <option value="1">USA</option>
+                                                        <option value="2">INDIA</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                    <select class="form-select form-control text-start mb-2" aria-label="Default select example">
+                                                        <option selected>Choose Year</option>
+                                                        <option value="1">USA</option>
+                                                        <option value="2">INDIA</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                    <select class="form-select form-control text-start mb-2" aria-label="Default select example">
+                                                        <option selected>Choose Year</option>
+                                                        <option value="1">USA</option>
+                                                        <option value="2">INDIA</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                  <div class="mb-2">
+                                                    <label>From Date</label>
+                                                    <input type="date" class="form-control">
+                                                  </div>
+                                                  <div class="mb-2">
+                                                    <label>To Date</label>
+                                                    <input type="date" class="form-control">
+                                                  </div>
+                                                </td>
+                                                <td> <span class="bg-danger btn text-white">0</span>
+                                                    <label class="d-block mt-2">List of Countries</label>
+                                                    <ul class="mt-3">
+                                                        <li>• 15</li>
+                                                        <li>• KSA-45338</li>
+                                                        <li>• BH-331</li>
+                                                        <li>• QA-8</li>
+                                                        <li>• KW-19</li>
+                                                        <li>• OM-33</li>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <a href="">Click for details</a>
+                                                </td>
                                             </tr>
                                      
                                     </table>
@@ -329,6 +622,1001 @@
                         </div>
 
                     </div>
+
+                    <!-- Selling Car Statistics -->
+                    <div class="card custom-card mt-5">
+                        <h4 class="p-2 m-0 table_title">Selling Car Statistics</h4>
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                                <table class="table text-nowrap mb-0 fw-bold border-dark">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"></th>
+                                            <th scope="col">Currency</th>
+                                            <th scope="col">Type of most / Currency</th>
+                                            <th scope="col">place</th>
+                                            <th scope="col">Bought by</th>
+                                            <th scope="col">condition</th>
+                                            <th scope="col">Type car</th>
+                                            <th scope="col">date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="crm-contact bg-light">
+                                        <td> Number of offers for selling car in<br>
+                                            General (IN open market for both user<br>
+                                            A and C2 and the auctions) </td>
+                                        <td class="bg-danger">
+                                        </td>
+                                        <td>
+                                            All or From the most to the less<br>
+                                            or From the less to the most
+                                        </td>
+                                        <td>
+                                            Area, country, all
+                                        </td>
+                                        <td class="bg-danger">
+                                        </td>
+                                        <td>All or full car, cut car, accident </td>
+                                        <td>All or Brand , model , sup model, years from to </td>
+                                        <td>All or by Days , months, years , from to</td>
+                                    </tr>
+                                    <tr class="crm-contact bg-light">
+                                        <td> Number of offers for selling car but not<br>
+                                            generate any respond
+                                        <td class="bg-danger">
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td class="bg-danger">
+                                        </td>
+                                        <td>// </td>
+                                        <td>// </td>
+                                        <td>//</td>
+                                    </tr>
+                                    <tr class="crm-contact bg-light">
+                                        <td> Number of respond to cars’ offers
+                                        <td class="bg-danger">
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td class="bg-danger">
+                                        </td>
+                                        <td>// </td>
+                                        <td>// </td>
+                                        <td>//</td>
+                                    </tr>
+                                    <tr class="crm-contact bg-light">
+                                        <td> Number of car been sold
+                                        <td class="bg-danger">
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>All or B, car dealer
+                                        </td>
+                                        <td> </td>
+                                        <td>// </td>
+                                        <td>//</td>
+                                    </tr>
+                                    <tr class="crm-contact bg-light">
+                                        <td> Number of revenue ($) from car been
+                                            sold 
+                                        <td>By all currencies ,
+                                            each currency
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>All or B, car dealer
+                                        </td>
+                                        <td>// </td>
+                                        <td>// </td>
+                                        <td>//</td>
+                                    </tr>
+                                    <tr class="crm-contact bg-warning">
+                                        <td> Number of offers for selling car in Open
+                                            market for user A                                            
+                                        <td class="bg-danger">
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td class="bg-danger">
+                                        </td>
+                                        <td>// </td>
+                                        <td>// </td>
+                                        <td>//</td>
+                                    </tr>
+                                    <tr class="crm-contact bg-warning">
+                                        <td> Number of offers for selling car but not
+                                            generate any respond for user A                                           
+                                        <td class="bg-danger">
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td class="bg-danger">
+                                        </td>
+                                        <td>// </td>
+                                        <td>// </td>
+                                        <td>//</td>
+                                    </tr>
+                                    <tr class="crm-contact bg-warning">
+                                        <td> Number of respond to cars’ offers by
+                                            user A                                       
+                                        <td class="bg-danger">
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td class="bg-danger">
+                                        </td>
+                                        <td>// </td>
+                                        <td>// </td>
+                                        <td>//</td>
+                                    </tr>
+                                    <tr class="crm-contact bg-warning">
+                                        <td> Number of car been sold by user A                                    
+                                        <td class="bg-danger">
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>All or B, car dealer
+                                        </td>
+                                        <td>// </td>
+                                        <td>// </td>
+                                        <td>//</td>
+                                    </tr>
+                                    <tr class="crm-contact bg-warning">
+                                        <td> Number of revenue ($) from car been
+                                            sold                                    
+                                        <td>By all currencies ,
+                                            each currency
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>All or B, car dealer
+                                        </td>
+                                        <td>// </td>
+                                        <td>// </td>
+                                        <td>//</td>
+                                    </tr>
+                                    <tr class="crm-contact bg-success">
+                                        <td> Number of offers for selling car in Open
+                                            market for user C2                                     
+                                        <td class="bg-danger">
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td class="bg-danger">
+                                        </td>
+                                        <td>// </td>
+                                        <td>// </td>
+                                        <td>//</td>
+                                    </tr>
+                                    <tr class="crm-contact bg-success">
+                                        <td> Number of offers for selling car but not
+                                            generate any respond for user C2                                  
+                                        <td class="bg-danger">
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td class="bg-danger">
+                                        </td>
+                                        <td>// </td>
+                                        <td>// </td>
+                                        <td>//</td>
+                                    </tr>
+                                    <tr class="crm-contact bg-success">
+                                        <td> Number of respond to cars’ offers by
+                                            user C2                                 
+                                        <td class="bg-danger">
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td class="bg-danger">
+                                        </td>
+                                        <td>// </td>
+                                        <td>// </td>
+                                        <td>//</td>
+                                    </tr>
+                                    <tr class="crm-contact bg-success">
+                                        <td> Number of car been sold by user C2                                
+                                        <td class="bg-danger">
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>All or B, car dealer
+                                        </td>
+                                        <td>// </td>
+                                        <td>// </td>
+                                        <td>//</td>
+                                    </tr>
+                                    <tr class="crm-contact bg-success">
+                                        <td> Number of revenue ($) from car been
+                                            sold                                
+                                        <td>By all currencies ,
+                                            each currency
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>All or B, car dealer
+                                        </td>
+                                        <td>// </td>
+                                        <td>// </td>
+                                        <td>//</td>
+                                    </tr>
+                                    <tr class="crm-contact bg-success">
+                                        <td> Number of Auctions                                
+                                        <td class="bg-danger">
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td class="bg-danger">
+                                        </td>
+                                        <td class="bg-danger">
+                                        </td>
+                                        <td class="bg-danger">
+                                        </td>
+                                        <td>//</td>
+                                    </tr>
+                                    <tr class="crm-contact bg-success">
+                                        <td> Number of offers for selling car in
+                                            Auction                                
+                                        <td class="bg-danger">
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td class="bg-danger">
+                                        </td>
+                                        <td>//</td>
+                                        <td>All or Brand , model , sup
+                                            model, years from to</td>
+                                        <td>//</td>
+                                    </tr>
+                                    <tr class="crm-contact bg-success">
+                                        <td> Number of offers for selling car but not
+                                            generate any respond
+                                        <td class="bg-danger">
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td class="bg-danger">
+                                        </td>
+                                        <td>//</td>
+                                        <td>//</td>
+                                        <td>//</td>
+                                    </tr>
+                                    <tr class="crm-contact bg-success">
+                                        <td> Number of respond to cars’ offers
+                                        <td class="bg-danger">
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td class="bg-danger">
+                                        </td>
+                                        <td>//</td>
+                                        <td>//</td>
+                                        <td>//</td>
+                                    </tr>
+                                    <tr class="crm-contact bg-success">
+                                        <td> Number of car been sold 
+                                        <td class="bg-danger">
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>All or B, car dealer
+                                        </td>
+                                        <td>//</td>
+                                        <td>//</td>
+                                        <td>//</td>
+                                    </tr>
+                                    <tr class="crm-contact bg-success">
+                                        <td> Number of revenue ($) from car been
+                                            sold 
+                                        <td>By all currencies ,
+                                            each currency
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>All or B, car dealer
+                                        </td>
+                                        <td>//</td>
+                                        <td>//</td>
+                                        <td>//</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- Selling PART Statistics -->
+                     <div class="card custom-card mt-5">
+                        <h4 class="p-2 m-0 table_title">Selling PART Statistics</h4>
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                                <table class="table text-nowrap mb-0 fw-bold border-dark">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"></th>
+                                            <th scope="col">Currency</th>
+                                            <th scope="col">Type of most / Currency</th>
+                                            <th scope="col">place</th>
+                                            <th scope="col">Type car</th>
+                                            <th scope="col">date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="crm-contact bg-light">
+                                        <td> Number of requests for BUYING PART </td>
+                                        <td>
+                                        </td>
+                                        <td>
+                                            All or From the most to the less <br>or From the less to the most
+                                        </td>
+                                        <td>
+                                            Area, country, all 
+                                        </td>
+                                        <td>All or Brand , model , sup model , years from to </td>
+                                        <td>All or by Days , months, years ,
+                                            from to</td>
+                                    </tr>
+                                    <tr class="crm-contact bg-light">
+                                        <td> Number of respond to parts’ requests </td>
+                                        <td>
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>// </td>
+                                        <td>//</td>
+                                    </tr>
+                                    <tr class="crm-contact bg-light">
+                                        <td> Number of parts’ requests but not generate any respond </td>
+                                        <td>
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>// </td>
+                                        <td>//</td>
+                                    </tr>
+                                    <tr class="crm-contact bg-light">
+                                        <td> Number of parts been requested  </td>
+                                        <td>
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>// </td>
+                                        <td>//</td>
+                                    </tr>
+                                    <tr class="crm-contact bg-light">
+                                        <td> Number of requested parts but not generate any respond  </td>
+                                        <td>
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>// </td>
+                                        <td>//</td>
+                                    </tr>
+                                    <tr class="crm-contact bg-light">
+                                        <td> Number of parts been sold</td>
+                                        <td>
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>// </td>
+                                        <td>//</td>
+                                    </tr>
+                                    <tr class="crm-contact bg-light">
+                                        <td> Number of revenue ($) from part been sold</td>
+                                        <td class="bg-warning">By all currencies ,
+                                            each currency
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>// </td>
+                                        <td>//</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                      <!-- Selling Metals Statistics -->
+                      <div class="card custom-card mt-5">
+                        <h4 class="p-2 m-0 table_title">Selling Metals Statistics</h4>
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                                <table class="table text-nowrap mb-0 fw-bold border-dark">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"></th>
+                                            <th scope="col">Currency</th>
+                                            <th scope="col">Type of most / Currency</th>
+                                            <th scope="col">place</th>
+                                            <th scope="col">Type car</th>
+                                            <th scope="col">date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="crm-contact bg-light">
+                                        <td> Number of requests for Selling Metals (issuing with
+                                            disregard if sold or not )  </td>
+                                        <td>
+                                        </td>
+                                        <td>
+                                            All or From the most <br>to the less or From<br> the less to the most
+                                        </td>
+                                        <td>
+                                            Area, country, all 
+                                        </td>
+                                        <td>All metals or each metals </td>
+                                        <td>All or by Days ,
+                                            months, years ,
+                                            from to</td>
+                                    </tr>
+                                    <tr class="crm-contact bg-light">
+                                        <td> Number of requests but not sold </td>
+                                        <td>
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>// </td>
+                                        <td>//</td>
+                                    </tr>
+                                    <tr class="crm-contact bg-light">
+                                        <td> Number of requests been sold </td>
+                                        <td>
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>// </td>
+                                        <td>//</td>
+                                    </tr>
+                                    <tr class="crm-contact bg-light">
+                                        <td> Number of revenue ($) from metals been sold</td>
+                                        <td class="bg-warning">By all currencies ,
+                                            each currency
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>// </td>
+                                        <td>//</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- Partnership B123 Statistics -->
+                     <div class="card custom-card mt-5">
+                        <h4 class="p-2 m-0 table_title">Partnership B123 Statistics</h4>
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                                <table class="table text-nowrap mb-0 fw-bold border-dark">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"></th>
+                                            <th scope="col">place</th>
+                                            <th scope="col">Type</th>
+                                            <th scope="col">Selling Part Car</th>
+                                            <th scope="col">Buying Car</th>
+                                            <th scope="col">Selling Metals</th>
+                                            <th scope="col">date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="crm-contact bg-light">
+                                        <td> Number of ALL B whom has membership</td>
+                                        <td>All or by Area,
+                                            country
+                                        </td>
+                                        <td>
+                                            All Activities or each (sell part , buy
+                                            cars, sell metals)
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Days , months,
+                                            years from, to</td>
+                                    </tr>
+                                    <tr class="crm-contact bg-light">
+                                        <td> Number of B LOG IN WEB-</td>
+                                        <td>//
+                                        </td>
+                                        <td>
+                                           
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>//</td>
+                                    </tr>
+                                    <tr class="crm-contact">
+                                        <td> Number of B who has not putting favorites
+                                            in their accounts </td>
+                                        <td>//
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>//</td>
+                                    </tr>
+                                    <tr class="crm-contact">
+                                        <td> Number of B who has update their
+                                            favorites </td>
+                                        <td>//
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>//</td>
+                                    </tr>
+                                    <tr class="crm-contact">
+                                        <td> Number of B who has favorites in their
+                                            accounts </td>
+                                        <td>//
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td class="bg-danger">
+                                            All or Brand , model , sup model ,<br> years from to
+                                        </td>
+                                        <td class="bg-danger">
+                                            All or Brand , model , sup<br> model , years from to
+                                        </td>
+                                        <td class="bg-danger">
+                                            ALL types of Metals, each<br> Metals
+                                        </td>
+                                        <td>//</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Partnership C2 Statistics -->
+                    <div class="card custom-card mt-5">
+                        <h4 class="p-2 m-0 table_title">Partnership C2 Statistics</h4>
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                                <table class="table text-nowrap mb-0 fw-bold border-dark">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"></th>
+                                            <th scope="col">place</th>
+                                            <th scope="col">Selling Part Car</th>
+                                            <th scope="col">date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="crm-contact bg-light">
+                                        <td> Number of ALL C2 whom has membership
+                                        </td>
+                                        <td>
+                                            All or by Area, country
+                                        </td>
+                                        <td>
+                                        </td>
+                                    
+                                        <td>Days , months,
+                                            years from, to</td>
+                                    </tr>
+                                    <tr class="crm-contact bg-light">
+                                        <td> Number of B LOG IN WEB- 
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                        </td>
+                                        <td>//</td>
+                                    </tr>
+                                    <tr class="crm-contact">
+                                        <td> Number of C2 who has not putting favorites
+                                            in their accounts
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                        </td>
+                                        <td>//</td>
+                                    </tr>
+                                    <tr class="crm-contact">
+                                        <td> Number of C2 who has update their
+                                            favorites
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                        </td>
+                                        <td>//</td>
+                                    </tr>
+                                    <tr class="crm-contact">
+                                        <td> Number of C2who has favorites in their
+                                            accounts
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td class="bg-danger">All or Brand , model , sup model ,
+                                            years from to
+                                        </td>
+                                        <td>//</td>
+                                    </tr>    
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                      <!-- Partnership D Statistics -->
+                      <div class="card custom-card mt-5">
+                        <h4 class="p-2 m-0 table_title">Partnership D Statistics</h4>
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                                <table class="table text-nowrap mb-0 fw-bold border-dark">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"></th>
+                                            <th scope="col">place</th>
+                                            <th scope="col">Selling Part Car</th>
+                                            <th scope="col">date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="crm-contact bg-light">
+                                        <td> Number of ALL D whom has membership
+                                        </td>
+                                        <td>
+                                            All or by Area, country
+                                        </td>
+                                        <td>
+                                        </td>
+                                    
+                                        <td>Days , months,
+                                            years from, to</td>
+                                    </tr>
+                                    <tr class="crm-contact bg-light">
+                                        <td> Number of D LOG IN WEB- 
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                        </td>
+                                        <td>//</td>
+                                    </tr>
+                                    <tr class="crm-contact">
+                                        <td> Number of D who has not putting favorites
+                                            in their accounts
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                        </td>
+                                        <td>//</td>
+                                    </tr>
+                                    <tr class="crm-contact">
+                                        <td> Number of D who has update their
+                                            favorites
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                        </td>
+                                        <td>//</td>
+                                    </tr>
+                                    <tr class="crm-contact">
+                                        <td> Number of D who has favorites in their
+                                            accounts                                            
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td class="bg-danger">ALL types of Metals, each Metals
+                                        </td>
+                                        <td>//</td>
+                                    </tr>    
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                      <!-- Text massage Statistics -->
+                      <div class="card custom-card mt-5">
+                        <h4 class="p-2 m-0 table_title">Text massage Statistics</h4>
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                                <table class="table text-nowrap mb-0 fw-bold border-dark">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"></th>
+                                            <th scope="col">BY Partnership</th>
+                                            <th scope="col">Type of most /</th>
+                                            <th scope="col">place</th>
+                                            <th scope="col">date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="crm-contact bg-light">
+                                        <td> Number of All Text massage been received
+                                            AND SENT BY 
+                                        </td>
+                                        <td>
+                                            ALL , or B, B2 ,B , C2, D
+                                        </td>
+                                        <td>All or From the most to
+                                            the less or From the less
+                                            to the most 
+                                        </td>
+                                        <td>Area, country, all , CITY </td>
+                                        <td>All or by Days , months,
+                                            years , from to </td>
+                                    </tr>  
+                                    <tr class="crm-contact bg-light">
+                                        <td> Number of Text massage been received BY  
+                                        </td>
+                                        <td>
+                                            ALL , or B, B2 ,B , C2, D
+                                        </td>
+                                        <td>All or From the most to
+                                            the less or From the less
+                                            to the most 
+                                        </td>
+                                        <td>Area, country, all , CITY </td>
+                                        <td>All or by Days , months,
+                                            years , from to </td>
+                                    </tr>  
+                                    <tr class="crm-contact bg-light">
+                                        <td> Number of Text massage been SENT BY   
+                                        </td>
+                                        <td>
+                                            ALL , or B, B2 ,B , C2, D
+                                        </td>
+                                        <td>//
+                                        </td>
+                                        <td>// </td>
+                                        <td>// </td>
+                                    </tr>  
+                                    <tr class="crm-contact bg-light">
+                                        <td> Number of Text massage been SENT BY   
+                                        </td>
+                                        <td>
+                                            A, C1
+                                        </td>
+                                        <td>
+                                        </td>
+                                        <td>Area, country, all , CITY </td>
+                                        <td>All or by Days , months,
+                                            years , from to</td>
+                                    </tr> 
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- Visitor Statistics -->
+                     <div class="card custom-card mt-5">
+                        <h4 class="p-2 m-0 table_title">Text massage Statistics</h4>
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                                <table class="table text-nowrap mb-0 fw-bold border-dark">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"></th>
+                                            <th scope="col">place</th>
+                                            <th scope="col">Type</th>
+                                            <th scope="col">date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="crm-contact bg-light">
+                                        <td> Number of visitor whom entered the WEB
+                                        </td>
+                                        <td>
+                                            All or by Area, country
+                                        </td>
+                                        <td>
+                                        </td>
+                                        <td>Days , months, years , from
+                                            to </td>
+                                    </tr>  
+                                    <tr class="crm-contact">
+                                        <td> Number of visitor whom entered the WEB- BUYING PART section
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                        </td>
+                                        <td>// </td>
+                                    </tr>  
+                                    <tr class="crm-contact">
+                                        <td> Number of visitor whom NOT completed the WEB- BUYING PART section processes
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                        </td>
+                                        <td>// </td>
+                                    </tr> 
+                                    <tr class="crm-contact">
+                                        <td> Number of visitor whom entered the WEB- SELLING CAR section 
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                        </td>
+                                        <td>// </td>
+                                    </tr> 
+                                    <tr class="crm-contact">
+                                        <td> Number of visitor whom NOT completed the WEB- SELLING CAR section processes 
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                        </td>
+                                        <td>// </td>
+                                    </tr> 
+                                    <tr class="crm-contact bg-success">
+                                        <td> Number of visitor whom entered the WEB- partnership section
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>
+                                        </td>
+                                        <td>// </td>
+                                    </tr> 
+                                    <tr class="crm-contact bg-success">
+                                        <td> Number of visitor whom NOT completed the WEB- partnership section processes
+                                        </td>
+                                        <td>
+                                            //
+                                        </td>
+                                        <td>All, or as Scrap, car dealer, C2, D
+                                        </td>
+                                        <td>// </td>
+                                    </tr> 
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </main>
 
