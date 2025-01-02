@@ -205,11 +205,12 @@ table.border-dark td, table.border-dark th { border-color: #00000036; color: #00
 /* login */
 .login_img img{min-height: 100vh;}
 .font-14{font-size: 14px !important;}
+.font-18{font-size: 18px !important;}
 
 
 /* user-login */
 .userlogin { background: #f1f1f1; }
 .userlogin .custom-card { height: calc(100vh - 6rem); overflow-y: scroll; }
 .userlogin .left-img {height: calc(100vh - 6rem) !important;}
-
-
+span.rating img { width: 90px !important; margin-inline: 10px; }
+.card img.reviewuser { width: 140px; height: 140px; object-fit: cover; min-width: 140px; }
