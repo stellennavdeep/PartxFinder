@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account</title>
+    <link rel="stylesheet" href="../adminpanel/css/bootstrap.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../adminpanel/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper userlogin p-5">
+        <main class="content container">
+            <div class="row justify-content-center mx-0 bg-white rounded overflow-hidden">
+                <div class="col-12 col-md-4 text-center align-items-start p-3 d-flex justify-content-center left-img" style="background: url(../auth/images/admin-login.webp) no-repeat center / cover">
+                    <div class="left-side">
+                        <img class="mb-3" src="../auth/images/logo.svg" alt="Logo" width="auto" height="42">
+                       
+                    </div>
+                </div>
+                <div class="col-md-8 col-12 bg-white">
+                    <!-- create-user -->
+                    <div class="custom-card m-0 p-5">
+                        <h3 class="mb-4">Create an Account</h3>
+                        <form class="row mt-3 pb-5">
+                            <div class="mb-3 col-6">
+                                <label class="form-label">Username*</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="mb-3 col-6">
+                                <label class="form-label">Email*</label>
+                                <input type="email" class="form-control">
+                            </div>
+
+                            <div class="mb-3 col-6">
+                                <label class="form-label">Password*</label>
+                                <input type="password" class="form-control">
+                            </div>
+                            <div class="mb-3 col-6">
+                                <label class="form-label">Confirm Password*</label>
+                                <input type="password" class="form-control">
+                            </div>
+                            <hr class="my-4">
+
+                            <div class="mb-3 col-12 col-md-4">
+                                <label class="form-label">Facility name*</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="mb-3 col-12 col-md-4">
+                                <label class="form-label">Owner's name*</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="mb-3 col-12 col-md-4">
+                                <label class="form-label">Owner's name*</label>
+                                <select class="form-select form-control text-start" aria-label="Default select example">
+                                    <option value="">Choose Activity</option>
+                                    <option value="8-1">Basic - Scrap</option>
+                                    <option value="11-1">Gold Scrap</option>
+                                </select>
+                            </div>
+                            <div class="mb-3 col-12 col-md-4">
+                                <label class="form-label">Country:*</label>
+                                <select class="form-select form-control text-start" aria-label="Default select example">
+                                    <option value="">USA</option>
+                                    <option value="8-1">Dubai</option>
+                                    <option value="11-1">japan</option>
+                                </select>
+                            </div>
+                            <div class="mb-3 col-12 col-md-4">
+                                <label class="form-label">City:*</label>
+                                <select class="form-select form-control text-start" aria-label="Default select example">
+                                    <option value="">USA</option>
+                                    <option value="8-1">Dubai</option>
+                                    <option value="11-1">japan</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3 col-12 col-md-4">
+                                <label class="form-label">Location coordinates</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="mb-3 col-12 col-md-12">
+                                <label class="form-label">Address*</label>
+                                <textarea rows="3" class="form-control"></textarea>
+                            </div>
+                            <div class="mb-3 col-12 col-md-4">
+                                <label class="form-label">Work Phone*</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="mb-3 col-12 col-md-4">
+                                <label class="form-label">Business Fax</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="mb-3 col-12 col-md-4">
+                                <label class="form-label">Company Website Address</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="mb-3 col-12 col-md-4">
+                                <label class="form-label">Company Logo</label>
+                                <input type="file" class="form-control">
+                            </div>
+
+                            <hr class="my-4">
+
+                            <div class="mb-3 col-12 col-md-4">
+                                <label class="form-label">Name of person in charge*</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="mb-3 col-12 col-md-4">
+                                <label class="form-label">Job Title*</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="mb-3 col-12 col-md-4">
+                                <label class="form-label">Subscription Period*</label>
+                                <select class="form-select form-control text-start" aria-label="Default select example">
+                                    <option value="">subscription</option>
+                                </select>
+                            </div>
+                            
+                            <hr class="my-4">
+
+                            <div class="mb-3 col-12 col-md-4">
+                                <label class="form-label">Mobile number*</label>
+                                <input type="number" class="form-control">
+                                <button type="submit" class="btn btn-secondary font-14 mt-3">Send OTP</button>
+                            </div>
+                            <hr class="my-4">
+                            <div class="text-end">
+                                <button type="submit" class="btn btn-primary w-auto px-5">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </main>
+    </div>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>

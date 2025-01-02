@@ -88,7 +88,7 @@ a.sidebar-link {
     position: relative;
     display: flex ; font-size: 0.875rem; align-items: center; gap: 8px;
 }
-a.sidebar-link:hover{opacity: 0.6;}
+a.sidebar-link:hover{opacity: 0.8;}
 ul.sidebar-nav a svg { width: 18px; position: relative; top: -1px; }
 .sidebar-link[data-bs-toggle="collapse"]::after {
     border: solid;
@@ -165,10 +165,7 @@ body.collapsed aside#sidebar a.sidebar-link::after { top: 14px; right: 10px; }
 
 /* admin-panel */
 .btn-primary{background: #d66a30 !important; border-color: #d66a30 !important;}
-.btn-primary:hover{opacity: 0.7;}
-
-
-
+.btn-primary:hover{opacity: 0.88;}
 label { color: #424242;}
 .form-control { font-size: 14px;box-shadow: unset !important;}
 nav.navbar span.navbar-toggler-icon { filter: invert(1) brightness(0.0);}
@@ -196,10 +193,8 @@ nav.navbar span.navbar-toggler-icon { filter: invert(1) brightness(0.0);}
 .form-search .btn-search { display: inline-flex ; align-items: center; justify-content: center; border-radius: 0 4px 4px 0; height: 100%; background: #2f4858 !important; font-size: 12px; padding: 8px; font-weight: 500; color: #fff; }
 .form-search .btn-search:hover{opacity: 0.8;}
 .form-search input{outline: unset; font-size: 14px; box-shadow: unset !important; border-radius: 4px 0 0 4px;}
-
 .form-check ul { padding: 0; }
 .form-check ul li:before { content: ''; border-right: 2px solid; border-bottom: 2px solid; display: inline-block; width: 6px; height: 6px; margin-right: 8px; transform: rotate(-45deg); border-color: #64676a; }
-
 .bg-success { background: #599b2e !important; }
 .table_title { text-align: center; background: #78ce78; font-size: 18px; color: #000; }
 table.border-dark td, table.border-dark th { border-color: #00000036; color: #000; }
@@ -209,9 +204,12 @@ table.border-dark td, table.border-dark th { border-color: #00000036; color: #00
 
 /* login */
 .login_img img{min-height: 100vh;}
+.font-14{font-size: 14px !important;}
 
 
-
-
+/* user-login */
+.userlogin { background: #f1f1f1; }
+.userlogin .custom-card { height: calc(100vh - 6rem); overflow-y: scroll; }
+.userlogin .left-img {height: calc(100vh - 6rem) !important;}
 
 
