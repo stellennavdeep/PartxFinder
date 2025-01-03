@@ -148,7 +148,7 @@ ul.sidebar-nav a svg { width: 18px; position: relative; top: -1px; }
 /* admin-panel */
 .btn-primary{background: #d66a30 !important; border-color: #d66a30 !important;}
 .btn-primary:hover{opacity: 0.88;}
-label { color: #424242;}
+label { color: #222222;}
 .form-control { font-size: 14px;box-shadow: unset !important;}
 nav.navbar span.navbar-toggler-icon { filter: invert(1) brightness(0.0);}
 .bg-primary { background: #d66a30 !important; }
