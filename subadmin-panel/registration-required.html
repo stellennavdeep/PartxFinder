@@ -412,157 +412,178 @@
             </nav>
             <main class="content px-3 py-4">
                 <div class="container-fluid">
-                    <!-- New admin page-->
-                    <h4 class="mb-3">Personal Details</h4>
 
-                    <!-- create-admin -->
-                    <div class="card custom-card p-4">
-                        <form class="row">
-                            <div class="mb-3 col-6">
-                                <label class="form-label">Name</label>
-                                <input type="email" class="form-control">
+                    <h4 class="mb-3">Registration Required
+                    </h4>
+                    <div class="card custom-card">
+                        <div class="card-header d-flex align-items-center justify-content-between flex-wrap gap-3">
+                            <div class="row justify-content-between">
+                                <div class="col-sm-auto">
+                                    <form class="form-search">
+                                        <i class="ph-duotone ph-magnifying-glass icon-search"></i>
+                                        <input type="search" class="form-control" placeholder="Search...">
+                                        <button class="btn btn-light-secondary btn-search">Search</button>
+                                    </form>
+                                </div>
                             </div>
-                            <div class="mb-3 col-6">
-                                <label class="form-label">Mobile</label>
-                                <input type="number" class="form-control">
-                            </div>
-
-                            <div class="mb-3 col-6">
-                                <label class="form-label">Address</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="mb-3 col-6">
-                                <label class="form-label">Country</label>
-                                <select class="form-select form-control text-start" aria-label="Default select example">
-                                    <option value="">USA</option>
-                                    <option value="8-1">Dubai</option>
-                                    <option value="11-1">japan</option>
+                            <div class="col-md-2 col-6">
+                                <select class="form-select form-control" aria-label="Default select example">
+                                    <option selected>Sort By</option>
+                                    <option value="1">latest admin</option>
+                                    <option value="2">old admin</option>
                                 </select>
                             </div>
-                            <div class="mb-3 col-6">
-                                <label class="form-label">City</label>
-                                <select class="form-select form-control text-start" aria-label="Default select example">
-                                    <option value="">USA</option>
-                                    <option value="8-1">Dubai</option>
-                                    <option value="11-1">japan</option>
-                                </select>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                                <table class="table text-nowrap">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"> <input class="form-check-input" type="checkbox"
+                                                    id="checkboxNoLabel" value="" aria-label="..."> </th>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Email</th>
+                                            <th scope="col">Phone</th>
+                                            <th scope="col">Area ,Country</th>
+                                            <th scope="col">Date</th>
+                                            <th scope="col">User Type</th>
+                                            <th scope="col">Attach logo</th>
+                                            <th scope="col">Username</th>
+                                            <th scope="col">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="crm-contact">
+                                            <td> <input class="form-check-input" type="checkbox" id="checkboxNoLabel1"
+                                                    value="" aria-label="..."> </td>
+
+                                            <td> Hassan </td>
+                                            <td> hassan@gmail.com</td>
+                                            <td>
+                                                <span class="d-block mb-1">123 456 789</span>
+                                            </td>
+                                            <td>
+                                                <span class="d-block mb-1">Mujammah, Jeddah Mujammah, Saudi Arabia</span>
+                                            </td>
+                                            <td>
+                                                <span class="d-block">14-01-2025</span>
+                                            </td>
+                                            <td> User B1 </td>
+                                            <td>
+                                                <span class="d-block"> <img style="width: 48px; height: 48px; object-fit: contain;" src="images/part-icon.svg"></span>
+                                            </td>
+                                             <td>
+                                                <span class="d-block"> Hassan_test</span>
+                                             </td>
+                                            <td><a href="edit-admin.html" class="btn btn-primary me-2 font-14">Approve</a>
+                                              <a href="edit-admin.html" class="btn btn-danger me-2 font-14">Reject</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="crm-contact">
+                                          <td> <input class="form-check-input" type="checkbox" id="checkboxNoLabel1"
+                                                  value="" aria-label="..."> </td>
+
+                                          <td> Hassan </td>
+                                          <td> hassan@gmail.com</td>
+                                          <td>
+                                              <span class="d-block mb-1">123 456 789</span>
+                                          </td>
+                                          <td>
+                                              <span class="d-block mb-1">Mujammah, Jeddah Mujammah, Saudi Arabia</span>
+                                          </td>
+                                          <td>
+                                              <span class="d-block">14-01-2025</span>
+                                          </td>
+                                          <td> User B1 </td>
+                                          <td>
+                                              <span class="d-block"> <img style="width: 48px; height: 48px; object-fit: contain;" src="images/part-icon.svg"></span>
+                                          </td>
+                                           <td>
+                                              <span class="d-block"> Hassan_test</span>
+                                           </td>
+                                          <td><a href="edit-admin.html" class="btn btn-primary me-2 font-14">Approve</a>
+                                            <a href="edit-admin.html" class="btn btn-danger me-2 font-14">Reject</a>
+                                          </td>
+                                      </tr>
+                                      <tr class="crm-contact">
+                                        <td> <input class="form-check-input" type="checkbox" id="checkboxNoLabel1"
+                                                value="" aria-label="..."> </td>
+
+                                        <td> Hassan </td>
+                                        <td> hassan@gmail.com</td>
+                                        <td>
+                                            <span class="d-block mb-1">123 456 789</span>
+                                        </td>
+                                        <td>
+                                            <span class="d-block mb-1">Mujammah, Jeddah Mujammah, Saudi Arabia</span>
+                                        </td>
+                                        <td>
+                                            <span class="d-block">14-01-2025</span>
+                                        </td>
+                                        <td> User B1 </td>
+                                        <td>
+                                            <span class="d-block"> <img style="width: 48px; height: 48px; object-fit: contain;" src="images/part-icon.svg"></span>
+                                        </td>
+                                         <td>
+                                            <span class="d-block"> Hassan_test</span>
+                                         </td>
+                                        <td><a href="edit-admin.html" class="btn btn-primary me-2 font-14">Approve</a>
+                                          <a href="edit-admin.html" class="btn btn-danger me-2 font-14">Reject</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="crm-contact">
+                                      <td> <input class="form-check-input" type="checkbox" id="checkboxNoLabel1"
+                                              value="" aria-label="..."> </td>
+
+                                      <td> Hassan </td>
+                                      <td> hassan@gmail.com</td>
+                                      <td>
+                                          <span class="d-block mb-1">123 456 789</span>
+                                      </td>
+                                      <td>
+                                          <span class="d-block mb-1">Mujammah, Jeddah Mujammah, Saudi Arabia</span>
+                                      </td>
+                                      <td>
+                                          <span class="d-block">14-01-2025</span>
+                                      </td>
+                                      <td> User B1 </td>
+                                      <td>
+                                          <span class="d-block"> <img style="width: 48px; height: 48px; object-fit: contain;" src="images/part-icon.svg"></span>
+                                      </td>
+                                       <td>
+                                          <span class="d-block"> Hassan_test</span>
+                                       </td>
+                                      <td><a href="edit-admin.html" class="btn btn-primary me-2 font-14">Approve</a>
+                                        <a href="edit-admin.html" class="btn btn-danger me-2 font-14">Reject</a>
+                                      </td>
+                                  </tr>
+
+                                </table>
                             </div>
-                            <div class="mb-3 col-6">
-                                <label class="form-label">Code activate</label>
-                                <input type="text" class="form-control">
-                            </div>
-
-
-                            <div class="text-end">
-                                <button type="submit" class="btn btn-primary w-auto px-4">Save</button>
-                            </div>
-                        </form>
-
-                    </div>
-
-                    <!-- create-admin -->
-                    <div class="col-12 mt-4">
-                        <div class="card custom-card">
-                            <h4 class="p-3">Tasks, and
-                                authorities </h4>
-                            <div class="card-body p-0">
-                                <div class="table-responsive">
-                                    <table class="table text-nowrap mb-0">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col"> <input class="form-check-input" type="checkbox"
-                                                        value=""> </th>
-                                                <th>Admin user A (Part Searcher)</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="crm-contact">
-                                                <td> <input class="form-check-input" type="checkbox" value="">
-                                                </td>
-                                                <td><label>Add
-                                                        and activate a Parts Searching Request on behalf of user
-                                                        A</label></td>
-                                            </tr>
-                                            <tr class="crm-contact">
-                                                <td> <input class="form-check-input" type="checkbox" value="">
-                                                </td>
-                                                <td><label>Activate incoming search requests (according to the grant validity for a region and country = GVRC)</label></td>
-                                            </tr>
-                                            <tr class="crm-contact">
-                                                <td> <input class="form-check-input" type="checkbox" value="">
-                                                </td>
-                                                <td><label> Edit a search request on behalf of user A GVRC</label></td>
-                                            </tr>
-                                            <tr class="crm-contact">
-                                                <td> <input class="form-check-input" type="checkbox" value="">
-                                                </td>
-                                                <td><label> Stop a search request GVRC</label></td>
-                                            </tr>
-                                            <tr class="crm-contact">
-                                                <td> <input class="form-check-input" type="checkbox" value="">
-                                                </td>
-                                                <td><label> Extend a search requests GVRC</label></td>
-                                            </tr>
-                                            <tr class="crm-contact">
-                                                <td> <input class="form-check-input" type="checkbox" value="">
-                                                </td>
-                                                <td><label>Delete a search requests GVRC</label></td>
-                                            </tr>
-                                            <tr class="crm-contact">
-                                                <td> <input class="form-check-input" type="checkbox" value="">
-                                                </td>
-                                                <td><label> Messaging user A GVRC
-                                                </label></td>
-                                            </tr>
-                                            <tr class="crm-contact">
-                                                <td> <input class="form-check-input" type="checkbox" value="">
-                                                </td>
-                                                <td><label>View incoming Search Requests GVRC
-                                                </label></td>
-                                            </tr>
-                                            <tr class="crm-contact">
-                                                <td> <input class="form-check-input" type="checkbox" value="">
-                                                </td>
-                                                <td><label>View responses to incoming search requests GVRC
-                                                </label></td>
-                                            </tr>
-                                            <tr class="crm-contact">
-                                                <td> <input class="form-check-input" type="checkbox" value="">
-                                                </td>
-                                                <td><label> View statistics according to the type of statistics and the GVRC
-                                                </label></td>
-                                            </tr>
-                                            <tr class="crm-contact">
-                                                <td> <input class="form-check-input" type="checkbox" value="">
-                                                </td>
-                                                <td><label> Add new car types to the database
-                                                </label></td>
-                                            </tr>
-                                            <tr class="crm-contact">
-                                                <td> <input class="form-check-input" type="checkbox" value="">
-                                                </td>
-                                                <td><label> Block user A's phones GVRC
-                                                </label></td>
-                                            </tr>
-                                            <tr class="crm-contact">
-                                                <td> <input class="form-check-input" type="checkbox" value="">
-                                                </td>
-                                                <td><label> Unblock user A's phones GVRC
-                                                </label></td>
-                                            </tr>
-                                            <tr class="crm-contact">
-                                                <td> <input class="form-check-input" type="checkbox" value="">
-                                                </td>
-                                                <td><label> View admin user A activities record GVRC
-                                                </label></td>
-                                            </tr>
-
-                                    </table>
+                        </div>
+                        <div class="card-footer border-top-0">
+                            <div class="d-flex align-items-center">
+                                <div> Showing 10 Entries <i class="bi bi-arrow-right ms-2 fw-medium"></i> </div>
+                                <div class="ms-auto">
+                                    <nav aria-label="Page navigation" class="pagination-style-5">
+                                        <ul class="pagination mb-0">
+                                            <li class="page-item disabled"> <a class="page-link"
+                                                    href="javascript:void(0);"> Prev </a> </li>
+                                            <li class="page-item active"><a class="page-link"
+                                                    href="javascript:void(0);">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a>
+                                            </li>
+                                            <li class="page-item"> <a class="page-link text-primary"
+                                                    href="javascript:void(0);"> next </a> </li>
+                                        </ul>
+                                    </nav>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                    
                 </div>
             </main>
 

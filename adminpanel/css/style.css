@@ -48,6 +48,7 @@ table th, table td { border: 1px solid #e5e5e5; }
     height: 100vh;
     position: sticky;
     overflow-y: overlay;
+    overflow-x: hidden;
     top: 0;
 }
 
