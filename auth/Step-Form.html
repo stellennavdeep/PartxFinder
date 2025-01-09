@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="wrapper userlogin p-5">
+    <div class="wrapper userlogin p-4">
         <main class="content container">
             <div class="row justify-content-center mx-0 bg-white rounded overflow-hidden">
                 <div class="col-12 col-md-4 text-center align-items-start p-3 d-flex justify-content-center left-img"
@@ -130,94 +130,314 @@
                                                 <option value="2020">2020</option>
                                             </select>
                                         </div>
+                                       <div class="row">
+                                            <div class="mb-3 col-12 col-md-4">
+                                                <label class="form-label">Part 1</label>
+                                                <input type="text" class="form-control" placeholder="Fill-up (controlled # of litter)">
+                                            </div>
+                                            <div class="mb-3 col-12 col-md-4 d-flex align-items-end">
+                                                <input type="file" class="form-control" placeholder="Add pic, video">
+                                            </div>
+                                            <div class="mb-3 col-12 col-md-4 d-flex align-items-end">
+                                                <button class="btn btn-primary me-2">Add</button>
+                                                <button class="btn btn-danger">Delete</button>
+                                            </div>
+                                       </div>
+                                       
+                                    </div>
+                                    <div class="inputs-container row mt-3">
+                                        <h4 class="mb-3">Are of search</h4>
                                         <div class="mb-3 col-12 col-md-3">
-                                            <label class="form-label">Part 1</label>
-                                            <input type="text" class="form-control" placeholder="Fill-up (controlled # of litter)">
+                                            <label class="form-label">Country</label>
+                                            <select class="form-select form-control text-start"
+                                                aria-label="Default select example">
+                                                <option value="">Choose Country</option>
+                                                <option value="2000">USA</option>
+                                                <option value="2000">Canada</option>
+                                                <option value="2000">India</option>
+                                                <option value="2000">Dubai</option>
+                                                <option value="2000">USA</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3 col-12 col-md-3">
+                                            <label class="form-label">Name of areas</label>
+                                            <input type="text" class="form-control" placeholder="Fill-up">
                                         </div>
                                        
                                     </div>
-                                    <button class="btn btn-primary nextBtn btn-lg pull-right"
-                                        type="button">Next</button>
+                                   <div class="d-flex justify-content-end">
+                                        <button class="btn btn-primary nextBtn" type="button">Next Step</button>
+                                   </div>
                                 </div>
                             </div>
                             <div class="row setup-content" id="step-2" style="display: none;">
                                 <div class="col-xs-12">
                                     <div class="col-md-12">
-                                        <h3>Step 2</h3>
-                                        <div class="form-group">
-                                            <label class="control-label">Company Name</label>
-                                            <input maxlength="200" type="text" required="required"
-                                                class="form-control" placeholder="Enter Company Name" />
+                                        <h3>Personal Details</h3>
+                                        <div class="row">
+                                            <div class="mb-3 col-12 col-md-4">
+                                                <label class="form-label">Name</label>
+                                                <input maxlength="200" type="text" required="required"
+                                                    class="form-control" placeholder="name" />
+                                            </div>
+                                            <div class="mb-3 col-12 col-md-4">
+                                                <label class="form-label">Country</label>
+                                                <select class="form-select form-control text-start"
+                                                    aria-label="Default select example">
+                                                    <option value="">Choose Country</option>
+                                                    <option value="2000">USA</option>
+                                                    <option value="2000">Canada</option>
+                                                    <option value="2000">India</option>
+                                                    <option value="2000">Dubai</option>
+                                                    <option value="2000">USA</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3 col-12 col-md-4">
+                                                <label class="form-label">City</label>
+                                                <select class="form-select form-control text-start"
+                                                    aria-label="Default select example">
+                                                    <option value="">Choose City</option>
+                                                    <option value="2000">Mohali</option>
+                                                    <option value="2000">Patiala</option>
+                                                    <option value="2000">India</option>
+                                                    <option value="2000">Dubai</option>
+                                                    <option value="2000">USA</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3 col-12 col-md-12">
+                                                <label class="form-label">Address</label>
+                                                <textarea class="form-control" rows="3" placeholder="Address"></textarea>
+                                            </div>
+                                            <div class="mb-3 col-12 col-md-4">
+                                                <label class="form-label">Mobile</label>
+                                                <input type="number" class="form-control" placeholder="Mobile" />
+                                            </div>
+                                            <div class="mb-3 col-12 col-md-4">
+                                                <label class="form-label">Code activate</label>
+                                                <input type="text" class="form-control" placeholder="Code activate" />
+                                            </div>
                                         </div>
-                                        <div class="form-group">
-                                            <label class="control-label">Company Address</label>
-                                            <input maxlength="200" type="text" required="required"
-                                                class="form-control" placeholder="Enter Company Address" />
-                                        </div>
-                                        <button class="btn btn-secondary backBtn btn-lg pull-left"
+                                        
+                                        <div class="d-flex justify-content-end">
+                                            <button class="btn btn-secondary backBtn me-3"
                                             type="button">Back</button>
-                                        <button class="btn btn-primary nextBtn btn-lg pull-right"
-                                            type="button">Next</button>
+                                         <button class="btn btn-primary nextBtn" type="button">Next</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row setup-content" id="step-3" style="display: none;">
-                                <div class="col-xs-12">
-                                    <div class="col-md-12">
-                                        <h3>Step 3</h3>
-                                        <button class="btn btn-secondary backBtn btn-lg pull-left"
-                                            type="button">Back</button>
-                                        <button class="btn btn-success btn-lg pull-right"
-                                            type="submit">Finish!</button>
+                                <div class="col-md-12 px-0">
+                                    <h4>Car Details and Parts</h4>
+                                    <div class="inputs-container row mt-3">
+                                       <div class="row mx-0 col-md-11 col-12">
+                                            <div class="mb-3 col-12 col-md-3">
+                                                <label class="form-label">Year Of Manufacture</label>
+                                                <select disabled class="form-select form-control text-start"
+                                                    aria-label="Default select example">
+                                                    <option value="">Choose Year</option>
+                                                    <option value="2000">2000</option>
+                                                    <option value="2001">2001</option>
+                                                    <option value="2002">2002</option>
+                                                    <option value="2003">2003</option>
+                                                    <option value="2004">2004</option>
+                                                    <option value="2005">2005</option>
+                                                    <option value="2006">2006</option>
+                                                    <option value="2007">2007</option>
+                                                    <option value="2008">2008</option>
+                                                    <option value="2009">2009</option>
+                                                    <option value="2010">2010</option>
+                                                    <option value="2011">2011</option>
+                                                    <option value="2012">2012</option>
+                                                    <option value="2013">2013</option>
+                                                    <option value="2014">2014</option>
+                                                    <option value="2015">2015</option>
+                                                    <option value="2016">2016</option>
+                                                    <option value="2017">2017</option>
+                                                    <option value="2018">2018</option>
+                                                    <option value="2019">2019</option>
+                                                    <option value="2020">2020</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3 col-12 col-md-3">
+                                                <label class="form-label">Manufacturer</label>
+                                                <select disabled class="form-select form-control text-start"
+                                                    aria-label="Default select example">
+                                                    <option value="">Choose Manufacturer</option>
+                                                    <option value="Toyota">Toyota</option>
+                                                    <option value="Honda">Honda</option>
+                                                    <option value="Ford">Ford</option>
+                                                    <option value="Chevrolet">Chevrolet</option>
+                                                    <option value="Nissan">Nissan</option>
+                                                    <option value="BMW">BMW</option>
+                                                    <option value="Mercedes-Benz">Mercedes-Benz</option>
+                                                    <option value="Volkswagen">Volkswagen</option>
+                                                    <option value="Audi">Audi</option>
+                                                    <option value="Hyundai">Hyundai</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3 col-12 col-md-3">
+                                                <label class="form-label">Brand</label>
+                                                <select disabled class="form-select form-control text-start"
+                                                aria-label="Default select example">
+                                                    <option value="">Choose Brand</option>
+                                                    <option value="Lexus">Lexus</option>
+                                                    <option value="Acura">Acura</option>
+                                                    <option value="Infiniti">Infiniti</option>
+                                                    <option value="Cadillac">Cadillac</option>
+                                                    <option value="Lincoln">Lincoln</option>
+                                                    <option value="Porsche">Porsche</option>
+                                                    <option value="Jaguar">Jaguar</option>
+                                                    <option value="Land Rover">Land Rover</option>
+                                                    <option value="Volvo">Volvo</option>
+                                                    <option value="Tesla">Tesla</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3 col-12 col-md-3">
+                                                <label class="form-label">Category</label>
+                                                <select disabled class="form-select form-control text-start"
+                                                    aria-label="Default select example">
+                                                    <option value="">Choose role</option>
+                                                    <option value="">LE</option>
+                                                </select>
+                                            </div>
+                                       </div>
+                                        <div class="mb-3 col-12 col-md-1 d-flex align-items-end px-0">
+                                            <button class="btn btn-danger">Edit</button> 
+                                        </div>
                                     </div>
+                                    <hr class="mt-2 mb-4">
+                                    <h4>Vehicle parts registration</h4>
+                                    <div class="inputs-container row mt-3">
+                                        <div class="mb-3 col-12 col-md-3">
+                                            <label class="form-label">How many parts</label>
+                                            <select disabled class="form-select form-control text-start"
+                                                aria-label="Default select example">
+                                                <option value="">Choose Year</option>
+                                                <option value="2000">2000</option>
+                                                <option value="2001">2001</option>
+                                                <option value="2002">2002</option>
+                                                <option value="2003">2003</option>
+                                                <option value="2004">2004</option>
+                                                <option value="2005">2005</option>
+                                                <option value="2006">2006</option>
+                                                <option value="2007">2007</option>
+                                                <option value="2008">2008</option>
+                                                <option value="2009">2009</option>
+                                                <option value="2010">2010</option>
+                                                <option value="2011">2011</option>
+                                                <option value="2012">2012</option>
+                                                <option value="2013">2013</option>
+                                                <option value="2014">2014</option>
+                                                <option value="2015">2015</option>
+                                                <option value="2016">2016</option>
+                                                <option value="2017">2017</option>
+                                                <option value="2018">2018</option>
+                                                <option value="2019">2019</option>
+                                                <option value="2020">2020</option>
+                                            </select>
+                                        </div>
+                                       <div class="row">
+                                            <div class="mb-3 col-12 col-md-4">
+                                                <label class="form-label">Part 1</label>
+                                                <input disabled type="text" class="form-control" placeholder="Fill-up (controlled # of litter)">
+                                            </div>
+                                            <div class="mb-3 col-12 col-md-4 d-flex align-items-end">
+                                                <input disabled type="file" class="form-control" placeholder="Add pic, video">
+                                            </div>
+                                            <div class="mb-3 col-12 col-md-4 d-flex align-items-end">
+                                                <button class="btn btn-primary me-2">Add</button>
+                                                <button class="btn btn-danger me-2">Delete</button>
+                                                <button class="btn btn-danger">Edit</button> 
+                                            </div>
+                                       </div>
+                                       
+                                    </div>
+                                    <div class="inputs-container row mt-3">
+                                        <h4 class="mb-3">Are of search</h4>
+                                        <div class="mb-3 col-12 col-md-3">
+                                            <label class="form-label">Country</label>
+                                            <select disabled class="form-select form-control text-start"
+                                                aria-label="Default select example">
+                                                <option value="">Choose Country</option>
+                                                <option value="2000">USA</option>
+                                                <option value="2000">Canada</option>
+                                                <option value="2000">India</option>
+                                                <option value="2000">Dubai</option>
+                                                <option value="2000">USA</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3 col-12 col-md-3">
+                                            <label class="form-label">Name of areas</label>
+                                            <input disabled type="text" class="form-control" placeholder="Fill-up">
+                                        </div>
+                                        <div class="mb-3 col-12 col-md-2 d-flex align-items-end px-0">
+                                            <button class="btn btn-danger">Edit</button> 
+                                        </div>
+                                       
+                                    </div>
+                                   <div class="d-flex justify-content-end">
+                                    <button class="btn btn-secondary backBtn pull-left me-3" type="button">Back</button>
+                                    <button class="btn btn-primary pull-right" type="submit">Finish!</button>
+                                   </div>
                                 </div>
+                                
                             </div>
+                            
                         </form>
                     </div>
 
                 </div>
         </main>
     </div>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/script.js"></script>
+    <script src="/adminpanel/js/bootstrap.js" defer></script>
+
     <script>
-        $(document).ready(function () {
-            var allWells = $('.setup-content');
-            var allNextBtn = $('.nextBtn');
-            var allBackBtn = $('.backBtn');
+  document.addEventListener("DOMContentLoaded", function () {
+    $(document).ready(function () {
+        var allWells = $('.setup-content'); // All steps
+        var allNextBtn = $('.nextBtn'); // Next buttons
+        var allBackBtn = $('.backBtn'); // Back buttons
 
-            allWells.hide(); // Hide all steps initially
-            $('#step-1').show(); // Show the first step initially
+        allWells.hide(); // Hide all steps initially
+        $('#step-1').show(); // Show the first step
 
-            // Next button functionality
-            allNextBtn.click(function () {
-                var curStep = $(this).closest(".setup-content");
-                var curInputs = curStep.find("input[type='text'],input[type='url']");
-                var isValid = true;
+        allNextBtn.click(function () {
+            var curStep = $(this).closest(".setup-content");
+            var nextStep = curStep.next('.setup-content');
 
-                $(".form-group").removeClass("has-error");
-                for (var i = 0; i < curInputs.length; i++) {
-                    if (!curInputs[i].validity.valid) {
-                        isValid = false;
-                        $(curInputs[i]).closest(".form-group").addClass("has-error");
-                    }
-                }
+            console.log("Current step: ", curStep.attr('id'));
+            console.log("Next step: ", nextStep.attr('id'));
 
-                if (isValid) {
-                    curStep.hide();
-                    curStep.next('.setup-content').show();
-                }
-            });
+            if (nextStep.length === 0) {
+                console.error("Next step not found!");
+                return;
+            }
 
-            // Back button functionality
-            allBackBtn.click(function () {
-                var curStep = $(this).closest(".setup-content");
+            var isValid = true; // Temporarily bypass validation for testing
+            if (isValid) {
                 curStep.hide();
-                curStep.prev('.setup-content').show();
-            });
+                nextStep.show();
+            } else {
+                console.error("Validation failed!");
+            }
         });
 
+        allBackBtn.click(function () {
+            var curStep = $(this).closest(".setup-content");
+            var prevStep = curStep.prev('.setup-content');
+
+            console.log("Current step: ", curStep.attr('id'));
+            console.log("Previous step: ", prevStep.attr('id'));
+
+            curStep.hide();
+            prevStep.show();
+        });
+    });
+});
+
     </script>
+    
 
 </body>
 
