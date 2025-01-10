@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car selling</title>
+    <link rel="stylesheet" href="../adminpanel/css/bootstrap.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../adminpanel/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper userlogin p-5">
+        <main class="content container">
+            <div class="row justify-content-center mx-0 bg-white rounded overflow-hidden">
+                <div class="col-12 col-md-4 text-center align-items-start p-3 d-flex justify-content-center left-img"
+                    style="background: url(../auth/images/admin-login.webp) no-repeat center / cover">
+                    <div class="left-side">
+                        <img class="mb-3" src="../auth/images/logo.svg" alt="Logo" width="auto" height="42">
+                    </div>
+                </div>
+                <div class="col-md-8 col-12 bg-white">
+                    <div class="custom-card m-0 p-md-4">
+                        <form role="form">
+                            <div class="row setup-content" id="step-1">
+                                <div class="col-md-12">
+                                    <h4>Vehicle Info. registration</h4>
+                                    <div class="inputs-container row mt-3">
+                                        <div class="mb-3 col-12 col-md-3">
+                                            <label class="form-label">Year Of Manufacture</label>
+                                            <select class="form-select form-control text-start"
+                                                aria-label="Default select example">
+                                                <option value="">Choose Year</option>
+                                                <option value="2000">2000</option>
+                                                <option value="2001">2001</option>
+                                                <option value="2002">2002</option>
+                                                <option value="2003">2003</option>
+                                                <option value="2004">2004</option>
+                                                <option value="2005">2005</option>
+                                                <option value="2006">2006</option>
+                                                <option value="2007">2007</option>
+                                                <option value="2008">2008</option>
+                                                <option value="2009">2009</option>
+                                                <option value="2010">2010</option>
+                                                <option value="2011">2011</option>
+                                                <option value="2012">2012</option>
+                                                <option value="2013">2013</option>
+                                                <option value="2014">2014</option>
+                                                <option value="2015">2015</option>
+                                                <option value="2016">2016</option>
+                                                <option value="2017">2017</option>
+                                                <option value="2018">2018</option>
+                                                <option value="2019">2019</option>
+                                                <option value="2020">2020</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3 col-12 col-md-3">
+                                            <label class="form-label">Manufacturer</label>
+                                            <select class="form-select form-control text-start"
+                                                aria-label="Default select example">
+                                                <option value="">Choose Manufacturer</option>
+                                                <option value="Toyota">Toyota</option>
+                                                <option value="Honda">Honda</option>
+                                                <option value="Ford">Ford</option>
+                                                <option value="Chevrolet">Chevrolet</option>
+                                                <option value="Nissan">Nissan</option>
+                                                <option value="BMW">BMW</option>
+                                                <option value="Mercedes-Benz">Mercedes-Benz</option>
+                                                <option value="Volkswagen">Volkswagen</option>
+                                                <option value="Audi">Audi</option>
+                                                <option value="Hyundai">Hyundai</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3 col-12 col-md-3">
+                                            <label class="form-label">Brand</label>
+                                            <select class="form-select form-control text-start"
+                                            aria-label="Default select example">
+                                                <option value="">Choose Brand</option>
+                                                <option value="Lexus">Lexus</option>
+                                                <option value="Acura">Acura</option>
+                                                <option value="Infiniti">Infiniti</option>
+                                                <option value="Cadillac">Cadillac</option>
+                                                <option value="Lincoln">Lincoln</option>
+                                                <option value="Porsche">Porsche</option>
+                                                <option value="Jaguar">Jaguar</option>
+                                                <option value="Land Rover">Land Rover</option>
+                                                <option value="Volvo">Volvo</option>
+                                                <option value="Tesla">Tesla</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3 col-12 col-md-3">
+                                            <label class="form-label">Category</label>
+                                            <select class="form-select form-control text-start"
+                                                aria-label="Default select example">
+                                                <option value="">Choose role</option>
+                                                <option value="">LE</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <hr class="mt-2 mb-4">
+                                    <h4>Vehicle conditions & pictures, videos registration</h4>
+                                    <div class="inputs-container row mt-3">
+                                        <div class="mb-3 col-12 col-md-4">
+                                            <label class="form-label">conditions</label>
+                                            <select class="form-select form-control text-start"
+                                                aria-label="Default select example">
+                                                <option value="">Choose</option>
+                                                <option value="2000">Brand New</option>
+                                                <option value="2001">Like New (Almost Unused)</option>
+                                                <option value="2002">Excellent Condition (No Repairs Needed)</option>
+                                                <option value="2003">Good Condition (Minor Wear & Tear)</option>
+                                                <option value="2004">Fair Condition (Needs Minor Repairs)</option>
+                                                <option value="2005">Poor Condition (Major Repairs Required)005</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3 col-12 col-md-12">
+                                            <label class="form-label">Car Description</label>
+                                            <textarea class="form-control" rows="3" placeholder="Description"></textarea>
+                                        </div>
+                                            <div class="mb-3 col-12 col-md-4">
+                                                <label class="form-label">Pictures & videos:</label>
+                                                <input type="file" class="form-control" placeholder="Add pic, video">
+                                            </div>
+                                            <div class="mb-3 col-12 col-md-4 d-flex align-items-end">
+                                                <button class="btn btn-primary me-2">Add</button>
+                                                <button class="btn btn-danger">Delete</button>
+                                            </div>
+                                       
+                                    </div>
+                                    <div class="inputs-container row mt-3">
+                                        <h4 class="mb-3">Car Location</h4>
+                                        <div class="mb-3 col-12 col-md-3">
+                                            <label class="form-label">Country</label>
+                                            <select class="form-select form-control text-start"
+                                                aria-label="Default select example">
+                                                <option value="">Choose Country</option>
+                                                <option value="2000">USA</option>
+                                                <option value="2000">Canada</option>
+                                                <option value="2000">India</option>
+                                                <option value="2000">Dubai</option>
+                                                <option value="2000">USA</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3 col-12 col-md-4">
+                                            <label class="form-label">City</label>
+                                            <select class="form-select form-control text-start"
+                                                aria-label="Default select example">
+                                                <option value="">Choose City</option>
+                                                <option value="2000">Mohali</option>
+                                                <option value="2000">Patiala</option>
+                                                <option value="2000">India</option>
+                                                <option value="2000">Dubai</option>
+                                                <option value="2000">USA</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3 col-12 col-md-12">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d927758.0367743374!2d46.163015146218584!3d24.724997784947895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sen!2sin!4v1736484238133!5m2!1sen!2sin" width="100%" height="240" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                       
+                                    </div>
+                                   <div class="d-flex justify-content-end mt-4">
+                                        <button class="btn btn-primary nextBtn" type="button">Next Step</button>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="row setup-content" id="step-2" style="display: none;">
+                                <div class="col-xs-12">
+                                    <div class="col-md-12">
+                                        <h4>Price& contact Preferences</h4>
+                                        <div class="row mt-3">
+                                            <div class="mb-3 col-12 col-md-4">
+                                                <label class="form-label">Price</label>
+                                                <select class="form-select form-control text-start"
+                                                    aria-label="Default select example">
+                                                    <option value="">Choose</option>
+                                                    <option value="2000">Negotiable</option>
+                                                    <option value="2000">Open Price</option>
+                                                    <option value="2000">Fixed price</option>
+                                                    <option value="2000">Price not less than</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3 col-12 col-md-4">
+                                                <label class="form-label">Putting price required from buyer</label>
+                                                <input type="text" class="form-control" placeholder="Price" />
+                                            </div>
+                                            
+                                            <div class="mb-3 col-12 col-md-12">
+                                                <hr class="mt-2 mb-4">
+                                                <h4 class="d-block">Contact Preferences</h4>
+                                                <label><input class="form-check-input" type="checkbox" value=""> Hide my number to all interested people and provide me with their numbers.</label>
+                                                <label class="mt-2"><input class="form-check-input" type="checkbox" value=""> Show my number to all interested people and provide me with their numbers.</label>
+                                                <label class="mt-2"><input class="form-check-input" type="checkbox" value=""> Show my number to all interested people whom follow the instruction and provide me with their numbers.</label>
+                                                <label class="mt-2"><input class="form-check-input" type="checkbox" value=""> Hide my number from all interested people whom follow the instruction and provide me with their numbers.</label>
+                                            </div>
+                                        </div>
+                                        <hr class="mt-2 mb-4">
+                                        <div class="inputs-container row mt-3">
+                                            <h4 class="d-block mb-3">Are of Offer car for Seles</h4>
+                                            <div class="mb-3 col-12 col-md-3">
+                                                <label class="form-label">Country</label>
+                                                <select class="form-select form-control text-start"
+                                                    aria-label="Default select example">
+                                                    <option value="">Choose Country</option>
+                                                    <option value="2000">USA</option>
+                                                    <option value="2000">Canada</option>
+                                                    <option value="2000">India</option>
+                                                    <option value="2000">Dubai</option>
+                                                    <option value="2000">USA</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3 col-12 col-md-4">
+                                                <label class="form-label">Name of areas</label>
+                                                <input type="text" class="form-control" placeholder="City" />
+                                            </div>   
+                                        </div>
+                                        <div class="d-flex justify-content-end mt-3">
+                                            <button class="btn btn-secondary backBtn me-3"
+                                            type="button">Back</button>
+                                         <button class="btn btn-primary nextBtn" type="button">Next Step</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row setup-content" id="step-3" style="display: none;">
+                                <div class="col-md-12">
+                                    <h4>Personal Details</h4>
+                                    <div class="inputs-container row mt-3">
+                                        <div class="mb-3 col-12 col-md-4">
+                                            <label class="form-label">Name</label>
+                                            <input type="text" class="form-control" placeholder="Name" />
+                                        </div>    
+                                        <div class="mb-3 col-12 col-md-4">
+                                            <label class="form-label">Year Of Manufacture</label>
+                                            <select class="form-select form-control text-start"
+                                                aria-label="Default select example">
+                                                <option value="">Choose Year</option>
+                                                <option value="2000">2000</option>
+                                                <option value="2001">2001</option>
+                                                <option value="2002">2002</option>
+                                                <option value="2003">2003</option>
+                                                <option value="2004">2004</option>
+                                                <option value="2005">2005</option>
+                                                <option value="2006">2006</option>
+                                                <option value="2007">2007</option>
+                                                <option value="2008">2008</option>
+                                                <option value="2009">2009</option>
+                                                <option value="2010">2010</option>
+                                                <option value="2011">2011</option>
+                                                <option value="2012">2012</option>
+                                                <option value="2013">2013</option>
+                                                <option value="2014">2014</option>
+                                                <option value="2015">2015</option>
+                                                <option value="2016">2016</option>
+                                                <option value="2017">2017</option>
+                                                <option value="2018">2018</option>
+                                                <option value="2019">2019</option>
+                                                <option value="2020">2020</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3 col-12 col-md-4">
+                                            <label class="form-label">City</label>
+                                            <input type="text" class="form-control" placeholder="City" />
+                                        </div>   
+                                        <div class="mb-3 col-12 col-md-12">
+                                            <label class="form-label">Address</label>
+                                            <textarea class="form-control" rows="3" placeholder="Description"></textarea>
+                                        </div>
+                                        <div class="mb-3 col-12 col-md-4">
+                                            <label class="form-label">Mobile</label>
+                                            <input type="number" class="form-control" placeholder="Mobile" />
+                                        </div> 
+                                        <div class="mb-3 col-12 col-md-4">
+                                            <label class="form-label">Code activate</label>
+                                            <input type="text" class="form-control" placeholder="Code activate" />
+                                        </div> 
+                                        <div class="mb-3 col-12 col-md-4 d-flex align-items-end">
+                                            <button class="btn btn-primary">verify</button>
+                                        </div>
+                                    </div>
+                                    <hr class="mt-2 mb-4">
+                                   <div class="d-flex justify-content-end mt-3">
+                                    <button class="btn btn-secondary backBtn pull-left me-3" type="button">Back</button>
+                                    <button class="btn btn-primary pull-right nextBtn" type="submit">Next Step</button>
+                                   </div>
+                                </div>
+                                
+                            </div>
+                            <div class="row setup-content" id="step-4" style="display: none;">
+                                <div class="col-md-12">
+                                    <h4>Vehicle Info. registration</h4>
+                                    <div class="inputs-container row mt-3">
+                                       <div class="row col-md-11 col-12">
+                                            <div class="mb-3 col-12 col-md-3">
+                                                <label class="form-label">Year Of Manufacture</label>
+                                                <select disabled class="form-select form-control text-start"
+                                                    aria-label="Default select example">
+                                                    <option value="">Choose Year</option>
+                                                    <option value="2000">2000</option>
+                                                    <option value="2001">2001</option>
+                                                    <option value="2002">2002</option>
+                                                    <option value="2003">2003</option>
+                                                    <option value="2004">2004</option>
+                                                    <option value="2005">2005</option>
+                                                    <option value="2006">2006</option>
+                                                    <option value="2007">2007</option>
+                                                    <option value="2008">2008</option>
+                                                    <option value="2009">2009</option>
+                                                    <option value="2010">2010</option>
+                                                    <option value="2011">2011</option>
+                                                    <option value="2012">2012</option>
+                                                    <option value="2013">2013</option>
+                                                    <option value="2014">2014</option>
+                                                    <option value="2015">2015</option>
+                                                    <option value="2016">2016</option>
+                                                    <option value="2017">2017</option>
+                                                    <option value="2018">2018</option>
+                                                    <option value="2019">2019</option>
+                                                    <option value="2020">2020</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3 col-12 col-md-3">
+                                                <label class="form-label">Manufacturer</label>
+                                                <select disabled class="form-select form-control text-start"
+                                                    aria-label="Default select example">
+                                                    <option value="">Choose Manufacturer</option>
+                                                    <option value="Toyota">Toyota</option>
+                                                    <option value="Honda">Honda</option>
+                                                    <option value="Ford">Ford</option>
+                                                    <option value="Chevrolet">Chevrolet</option>
+                                                    <option value="Nissan">Nissan</option>
+                                                    <option value="BMW">BMW</option>
+                                                    <option value="Mercedes-Benz">Mercedes-Benz</option>
+                                                    <option value="Volkswagen">Volkswagen</option>
+                                                    <option value="Audi">Audi</option>
+                                                    <option value="Hyundai">Hyundai</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3 col-12 col-md-3">
+                                                <label class="form-label">Brand</label>
+                                                <select disabled class="form-select form-control text-start"
+                                                aria-label="Default select example">
+                                                    <option value="">Choose Brand</option>
+                                                    <option value="Lexus">Lexus</option>
+                                                    <option value="Acura">Acura</option>
+                                                    <option value="Infiniti">Infiniti</option>
+                                                    <option value="Cadillac">Cadillac</option>
+                                                    <option value="Lincoln">Lincoln</option>
+                                                    <option value="Porsche">Porsche</option>
+                                                    <option value="Jaguar">Jaguar</option>
+                                                    <option value="Land Rover">Land Rover</option>
+                                                    <option value="Volvo">Volvo</option>
+                                                    <option value="Tesla">Tesla</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3 col-12 col-md-3">
+                                                <label class="form-label">Category</label>
+                                                <select disabled class="form-select form-control text-start"
+                                                    aria-label="Default select example">
+                                                    <option value="">Choose role</option>
+                                                    <option value="">LE</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 col-12 col-md-1 d-flex align-items-end px-0">
+                                            <button class="btn btn-danger">Edit</button> 
+                                        </div>
+                                    </div>
+                                    <hr class="mt-2 mb-4">
+                                    <h4>Vehicle conditions & pictures, videos registration</h4>
+                                    <div class="inputs-container row mt-3">
+                                        <div class="row col-md-11 col-12">
+                                            <div class="mb-3 col-12 col-md-4">
+                                                <label class="form-label">conditions</label>
+                                                <select disabled class="form-select form-control text-start"
+                                                    aria-label="Default select example">
+                                                    <option value="">Choose</option>
+                                                    <option value="2000">Brand New</option>
+                                                    <option value="2001">Like New (Almost Unused)</option>
+                                                    <option value="2002">Excellent Condition (No Repairs Needed)</option>
+                                                    <option value="2003">Good Condition (Minor Wear & Tear)</option>
+                                                    <option value="2004">Fair Condition (Needs Minor Repairs)</option>
+                                                    <option value="2005">Poor Condition (Major Repairs Required)005</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3 col-12 col-md-12">
+                                                <label class="form-label">Car Description</label>
+                                                <textarea disabled class="form-control" rows="3" placeholder="Description"></textarea>
+                                            </div>
+                                            <div class="mb-3 col-12 col-md-4">
+                                                <label class="form-label">Pictures & videos:</label>
+                                                <input disabled type="file" class="form-control" placeholder="Add pic, video">
+                                            </div>
+                                         </div>
+                                         <div class="mb-3 col-12 col-md-1 d-flex align-items-end px-0">
+                                             <button class="btn btn-danger">Edit</button> 
+                                         </div>
+                                     </div>
+                                     <hr class="mt-2 mb-4">
+                                     <h4>Car Location</h4>
+                                     <div class="inputs-container row mt-3">
+                                         <div class="row col-md-11 col-12">
+                                            <div class="mb-3 col-12 col-md-3">
+                                                <label class="form-label">Country</label>
+                                                <select disabled class="form-select form-control text-start"
+                                                    aria-label="Default select example">
+                                                    <option value="">Choose Country</option>
+                                                    <option value="2000">USA</option>
+                                                    <option value="2000">Canada</option>
+                                                    <option value="2000">India</option>
+                                                    <option value="2000">Dubai</option>
+                                                    <option value="2000">USA</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3 col-12 col-md-4">
+                                                <label class="form-label">City</label>
+                                                <select disabled class="form-select form-control text-start"
+                                                    aria-label="Default select example">
+                                                    <option value="">Choose City</option>
+                                                    <option value="2000">Mohali</option>
+                                                    <option value="2000">Patiala</option>
+                                                    <option value="2000">India</option>
+                                                    <option value="2000">Dubai</option>
+                                                    <option value="2000">USA</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3 col-12 col-md-1 d-flex align-items-end px-0">
+                                                <button class="btn btn-danger">Edit</button> 
+                                            </div>
+                                            <div class="mb-3 col-12 col-md-12">
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d927758.0367743374!2d46.163015146218584!3d24.724997784947895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sen!2sin!4v1736484238133!5m2!1sen!2sin" width="100%" height="240" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                            </div>
+                                          </div>
+                                     </div>
+                                     <hr class="mt-2 mb-4">
+                                     <h4>Price& contact Preferences</h4>
+                                     <div class="inputs-container row mt-3">
+                                         <div class="row col-md-12 col-12">
+                                            <div class="mb-3 col-12 col-md-4">
+                                                <label class="form-label">Price</label>
+                                                <select disabled class="form-select form-control text-start"
+                                                    aria-label="Default select example">
+                                                    <option value="">Choose</option>
+                                                    <option value="2000">Negotiable</option>
+                                                    <option value="2000">Open Price</option>
+                                                    <option value="2000">Fixed price</option>
+                                                    <option value="2000">Price not less than</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3 col-12 col-md-4">
+                                                <label class="form-label">Putting price required from buyer</label>
+                                                <input disabled type="text" class="form-control" placeholder="Price" />
+                                            </div>   
+                                            <div class="mb-3 col-12 col-md-1 d-flex align-items-end px-0">
+                                                <button class="btn btn-danger">Edit</button> 
+                                            </div>
+                                            <div class="mb-3 col-12 col-md-12">
+                                                <h4 class="d-block">Contact Preferences</h4>
+                                                <label><input selected class="form-check-input" type="checkbox" value=""> Hide my number to all interested people and provide me with their numbers.</label>
+                                                <label class="mt-2"><input class="form-check-input" type="checkbox" value=""> Show my number to all interested people and provide me with their numbers.</label>
+                                                <label class="mt-2"><input class="form-check-input" type="checkbox" value=""> Show my number to all interested people whom follow the instruction and provide me with their numbers.</label>
+                                                <label class="mt-2"><input class="form-check-input" type="checkbox" value=""> Hide my number from all interested people whom follow the instruction and provide me with their numbers.</label>
+                                            </div>
+                                        </div>
+                                     </div>
+                                     <hr class="mt-2 mb-4">
+                                     <h4>Are of Offer car for Seles</h4>
+                                     <div class="inputs-container row mt-3">
+                                         <div class="row col-md-12 col-12">
+                                            <div class="mb-3 col-12 col-md-3">
+                                                <label class="form-label">Country</label>
+                                                <select disabled class="form-select form-control text-start"
+                                                    aria-label="Default select example">
+                                                    <option value="">Choose Country</option>
+                                                    <option value="2000">USA</option>
+                                                    <option value="2000">Canada</option>
+                                                    <option value="2000">India</option>
+                                                    <option value="2000">Dubai</option>
+                                                    <option value="2000">USA</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3 col-12 col-md-4">
+                                                <label class="form-label">Name of areas</label>
+                                                <input disabled type="text" class="form-control" placeholder="City" />
+                                            </div>     
+                                            <div class="mb-3 col-12 col-md-1 d-flex align-items-end px-0">
+                                                <button class="btn btn-danger">Edit</button> 
+                                            </div>
+                                        </div>
+                                     </div>
+                                  
+                                   <div class="d-flex justify-content-end">
+                                    <button class="btn btn-secondary backBtn pull-left me-3" type="button">Back</button>
+                                    <button class="btn btn-primary pull-right" type="submit">Final Step</button>
+                                   </div>
+                                </div>
+                                
+                            </div>
+                          
+                            
+                        </form>
+                    </div>
+
+                </div>
+        </main>
+    </div>
+    <script src="/adminpanel/js/bootstrap.js" defer></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            $(document).ready(function () {
+                // Get all steps and buttons
+                var allWells = $('.setup-content'); 
+                var allNextBtn = $('.nextBtn');
+                var allBackBtn = $('.backBtn');
+
+                // Hide all steps initially except the first
+                allWells.hide();
+                $('#step-1').show();
+
+                // Next button click handler
+                allNextBtn.click(function (e) {
+                    e.preventDefault();
+                    var curStep = $(this).closest(".setup-content");
+                    var curStepId = curStep.attr("id");
+                    var nextStep = curStep.next('.setup-content');
+
+                    console.log(`Current Step: ${curStepId}`);
+                    if (nextStep.length > 0) {
+                        var nextStepId = nextStep.attr("id");
+                        console.log(`Navigating to Next Step: ${nextStepId}`);
+                        curStep.hide();
+                        nextStep.show();
+                    } else {
+                        console.error("No next step found!");
+                    }
+                });
+
+                // Back button click handler
+                allBackBtn.click(function (e) {
+                    e.preventDefault();
+                    var curStep = $(this).closest(".setup-content");
+                    var curStepId = curStep.attr("id");
+                    var prevStep = curStep.prev('.setup-content');
+
+                    console.log(`Current Step: ${curStepId}`);
+                    if (prevStep.length > 0) {
+                        var prevStepId = prevStep.attr("id");
+                        console.log(`Navigating to Previous Step: ${prevStepId}`);
+                        curStep.hide();
+                        prevStep.show();
+                    } else {
+                        console.error("No previous step found!");
+                    }
+                });
+            });
+        });
+
+    </script>
+    
+
+</body>
+
+</html>
