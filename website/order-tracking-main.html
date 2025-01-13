@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/adminpanel/css/bootstrap.css">
+    <link rel="stylesheet" href="/adminpanel/css/style.css">
+
+    <style>
+        .order-table table td, .order-table table th { border: 0px; padding: 3px 15px 3px 0px; font-size: 16px; }
+        .order-table table td { text-align: right; }
+        .order-table { border-radius: 20px; padding: 15px; background-color: #f7f7f7; }
+        .product-card img{border-radius: 12px; width: 100px; height: 100px;}
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="main">
+            <main class="content px-3 py-4">
+                <div class="container">
+
+                    <h4 class="mb-3 border-bottom pb-3">Order Details</h4>
+                    <div class="order-tracking-main">
+                        <div class="order-details-upper border-bottom pb-4">
+                            <div class="row justify-content-between">
+                                <div class="col-5">
+                                    <h2>Order #123asd213sad</h2>
+                                    <a href="#" class="text-black text-decoration-underline">View Reciept</a>
+                                   <div class="mt-5 order-table order-details-table w-100">
+                                    <table class="w-100">
+                                        <tbody>
+                                            <tr>
+                                                <th>Order Date:</th>
+                                                <td>October 20th, 2024</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Order Total:</th>
+                                                <td>Rs 50,000</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Payment:</th>
+                                                <td>Completed(Credit Card)</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Order Origin:</th>
+                                                <td>Online</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                   </div>
+                                </div>
+                                <div class="col-5 d-flex align-items-end justify-content-end">
+                                    <div class="mt-5 order-table order-summary-table w-100">
+                                        <table class="w-100">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Subtotal:</th>
+                                                    <td>Rs 40,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Delivery:</th>
+                                                    <td>Rs 2200</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="pb-3">Sales Tax</th>
+                                                    <td class="pb-3">Rs 150</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="border-top pt-3">Total</th>
+                                                    <td class="border-top pt-3">Rs 50000</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                       </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-details-lower pt-4">
+                            <div class="row justify-content-between">
+                                <div class="col-5">
+                                    <h2>Delivery</h2>
+                                <div class="product-card d-flex justify-content-start align-items-start gap-4 mt-5">
+                                    <div class="product-card-image">
+                                        <img src="https://picsum.photos/100" alt="">
+                                    </div>
+                                    <div class="product-card-details d-flex justify-content-end align-items-start flex-column gap-2">
+                                        <h4 class="m-0">Product Name</h3>
+                                        <p class="m-0">Quantity: 1</p>
+                                        <p class="m-0">Price: Rs 40,000</p>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary w-100 mt-4">Buy Again</button>
+                                </div>
+                                <div class="col-5 d-flex align-items-end justify-content-end">
+                                    <div class="mt-5 order-table order-summary-table w-100">
+                                        <table class="w-100">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Subtotal:</th>
+                                                    <td>Rs 40,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Delivery:</th>
+                                                    <td>Rs 2200</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="pb-3">Sales Tax</th>
+                                                    <td class="pb-3">Rs 150</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="border-top pt-3">Total</th>
+                                                    <td class="border-top pt-3">Rs 50000</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                       </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+        </div>
+    </div>
+    <script src="../adminpanel/js/bootstrap.js"></script>
+    <script src="../adminpanel/js/script.js"></script>
+
+
+</body>
+
+</html>
