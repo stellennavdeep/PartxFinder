@@ -190,15 +190,12 @@ table.border-dark td, table.border-dark th { border-color: #00000036; color: #00
 .font-14{font-size: 14px !important;}
 .font-18{font-size: 18px !important;}
 
-
 /* user-login */
 .userlogin { background: #f1f1f1; }
 .userlogin .custom-card { height: calc(100vh - 6rem); overflow-y: scroll; }
 .userlogin .left-img {height: calc(100vh - 6rem) !important;}
 span.rating img { width: 90px !important; margin-inline: 10px; }
 .card img.reviewuser { width: 140px; height: 140px; object-fit: cover; min-width: 140px; }
-
-
 
 /* Footer and Nav */
 @media (min-width:767px) {
@@ -219,10 +216,8 @@ body.collapsed aside#sidebar a.sidebar-link::after { top: 14px; right: 10px; }
 
 
 /* sub-admin */
-aside#sidebar {
-  background: #040918;
-}
-
+aside#sidebar {background: #040918;}
+.navbar-expand .navbar-nav .form-outline input {border-radius: 6px 0 0 6px;}
 .header-link-icon { width: 38px; height: 38px; font-size: 1rem; color: #61748f; fill: #61748f; background-color: transparent; transition: all ease 0.05s; position: relative; padding: 0.45rem; border-radius: 50%; }
 .animate-bell { -webkit-animation: ring 4s 0.7s ease-in-out infinite; -webkit-transform-origin: 50% 4px; -moz-animation: ring 4s 0.7s ease-in-out infinite; -moz-transform-origin: 50% 4px; animation: ring 4s 0.7s ease-in-out infinite; transform-origin: 50% 4px; }
 .header-icon-pulse { position: absolute; width: 5px; height: 5px; inset-block-start: 5px; inset-inline-end: 16px; }
@@ -232,6 +227,9 @@ aside#sidebar {
 .simplebar-wrapper p { font-size: 14px; }
 .header-icon-badge { position: absolute; padding: 0.15rem 0.25rem; inset-block-start: 0; inset-inline-end: 0.45rem; font-size: 0.625rem; }
 .dashbaord_part{width: 50px; height: 50px; object-fit: cover; border-radius: 8px;}
+
+
+table.listing_time td label { min-width: 48%; }
 
 @keyframes ring {
     0% {
@@ -307,3 +305,18 @@ aside#sidebar {
       transform: rotate(0);
     }
   }
+
+
+
+
+  /* website */
+body, p, a, h1m h2, h3, h4, h5 ,h6{font-family: "Wix Madefor Text", serif !important;}
+
+header ul.navbar-nav a.nav-link { font-size: 16px; }
+.top-bar ul.nav li a { width: 24px; display: flex ; align-items: center; justify-content: center; height: 24px; background: #ffffff30; border-radius: 50%; padding: 7px; }
+
+.home_banner .banner_inner { min-height: 440px; }
+.home_banner .banner_inner a.btn { border-radius: 30px; padding-inline: 20px; font-size: 16px; font-weight: 500 !important; }
+.home_banner .banner_inner a.btn:hover{opacity: 0.8;}
+.home_banner .banner_inner h1 { font-size: 48px; color: #3A3939 !important;font-weight: 800 !important;}
+  
