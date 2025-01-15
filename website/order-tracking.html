@@ -26,7 +26,7 @@
         .order-table {
             border-radius: 20px;
             padding: 15px;
-            background-color: #f7f7f7;
+            background-color: #f7f7f7; border: 1px solid #efefef;
         }
 
         .product-card img {
@@ -55,24 +55,24 @@
                         </div>
                         <div class="order-details-lower pt-4">
                             <div class="row justify-content-between">
-                                <div class="col-5">
-                                    <h2>Delivery</h2>
+                                <div class="col-12 col-md-5">
+                                    <!-- <h2>Delivery</h2> -->
                                     <div class="product-card d-flex justify-content-start align-items-start gap-4 mt-5">
                                         <div class="product-card-image">
                                             <img src="https://picsum.photos/100" alt="">
                                         </div>
                                         <div
                                             class="product-card-details d-flex justify-content-end align-items-start flex-column gap-2">
-                                            <h4 class="m-0">Product Name</h3>
+                                            <h4 class="m-0">Name</h3>
                                                 <p class="m-0">Quantity: 1</p>
                                                 <p class="m-0">Price: Rs 40,000</p>
                                         </div>
                                     </div>
                                     <button class="btn btn-primary w-100 mt-4">Buy Again</button>
                                 </div>
-                                <div class="col-5 d-flex align-items-end justify-content-end">
+                                <div class="col-md-5 col-12 d-flex align-items-end justify-content-end">
                                     <div class="mt-5 order-table order-summary-table w-100">
-                                        <h4 class="mb-3 text-black-50">Customer Details</h4>
+                                        <h4 class="mb-3 text-black-50">Personal Details</h4>
                                         <table class="w-100">
                                             <tbody>
                                                 <tr>
@@ -89,7 +89,7 @@
                                                 </tr>
                                                 <tr>
                                                     <th class="">Mobile</th>
-                                                    <td class="">891273981273</td>
+                                                    <td class="">+123 456789</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -97,6 +97,167 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="card custom-card mt-5">
+                            <div class="card-header d-flex align-items-center justify-content-between flex-wrap gap-3 bg-white">
+                                <div class="row justify-content-between">
+                                    <div class="col-sm-auto">
+                                        <form class="form-search">
+                                            <i class="ph-duotone ph-magnifying-glass icon-search"></i>
+                                            <input type="search" class="form-control" placeholder="Search...">
+                                            <button class="btn btn-light-secondary btn-search">Search</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-6">
+                                    <select class="form-select form-control" aria-label="Default select example">
+                                        <option selected>Sort By</option>
+                                        <option value="1">latest admin</option>
+                                        <option value="2">old admin</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="card-body p-0">
+                                <div class="table-responsive">
+                                    <table class="table text-nowrap">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col"> <input class="form-check-input" type="checkbox"
+                                                        id="checkboxNoLabel" value="" aria-label="...">  </th>
+                                                <th scope="col">User Id</th>
+                                                <th scope="col">Name</th>
+                                                <th scope="col">Email</th>
+                                                <th scope="col">Phone</th>
+                                                <th scope="col">Area ,Country</th>
+                                                <th scope="col">Date of register</th>
+                                                <th scope="col">Status</th>
+                                                <th scope="col">Part name</th>
+                                                <th scope="col">Brand</th>
+                                                <th scope="col">conditions</th>
+                                                <th scope="col">Year Of Manufacture</th>
+                                                <th scope="col">Manufacturer</th>
+                                                <th scope="col">Pictures</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="crm-contact">
+                                                <td> <input class="form-check-input" type="checkbox" id="checkboxNoLabel1"
+                                                        value="" aria-label="..."> </td>
+      
+                                                <td> 18 </td>
+                                                <td> Rehab Al-Ghamdi </td>
+                                                <td>Rehab@gmail.com</td>
+                                                <td>(783) 432-5300</td>   
+                                                <td>71151 Batoul Al-Suqair Passage, Building No. 49 Al-Zulfi</td> 
+                                                <td>14/01/2024</td>
+                                                <td>Progress</td>
+                                                <td>Alternator</td>
+                                                <td>TATA</td>
+                                                <td>New</td>
+                                                <td>14/01/2024</td>
+                                                <td>Lorem</td>
+                                                <td><img style="width: 40px; height: 40px;" src="#"></td>
+                                            </tr>
+                                            <tr class="crm-contact">
+                                                <td> <input class="form-check-input" type="checkbox" id="checkboxNoLabel1"
+                                                        value="" aria-label="..."> </td>
+      
+                                                <td> 18 </td>
+                                                <td> Rehab Al-Ghamdi </td>
+                                                <td>Rehab@gmail.com</td>
+                                                <td>(783) 432-5300</td>   
+                                                <td>71151 Batoul Al-Suqair Passage, Building No. 49 Al-Zulfi</td> 
+                                                <td>14/01/2024</td>
+                                                <td>Progress</td>
+                                                <td>Alternator</td>
+                                                <td>TATA</td>
+                                                <td>New</td>
+                                                <td>14/01/2024</td>
+                                                <td>Lorem</td>
+                                                <td><img style="width: 40px; height: 40px;" src="#"></td>
+                                            </tr>
+                                            <tr class="crm-contact">
+                                                <td> <input class="form-check-input" type="checkbox" id="checkboxNoLabel1"
+                                                        value="" aria-label="..."> </td>
+      
+                                                <td> 18 </td>
+                                                <td> Rehab Al-Ghamdi </td>
+                                                <td>Rehab@gmail.com</td>
+                                                <td>(783) 432-5300</td>   
+                                                <td>71151 Batoul Al-Suqair Passage, Building No. 49 Al-Zulfi</td> 
+                                                <td>14/01/2024</td>
+                                                <td>Progress</td>
+                                                <td>Alternator</td>
+                                                <td>TATA</td>
+                                                <td>New</td>
+                                                <td>14/01/2024</td>
+                                                <td>Lorem</td>
+                                                <td><img style="width: 40px; height: 40px;" src="#"></td>
+                                            </tr>
+                                            <tr class="crm-contact">
+                                                <td> <input class="form-check-input" type="checkbox" id="checkboxNoLabel1"
+                                                        value="" aria-label="..."> </td>
+      
+                                                <td> 18 </td>
+                                                <td> Rehab Al-Ghamdi </td>
+                                                <td>Rehab@gmail.com</td>
+                                                <td>(783) 432-5300</td>   
+                                                <td>71151 Batoul Al-Suqair Passage, Building No. 49 Al-Zulfi</td> 
+                                                <td>14/01/2024</td>
+                                                <td>Progress</td>
+                                                <td>Alternator</td>
+                                                <td>TATA</td>
+                                                <td>New</td>
+                                                <td>14/01/2024</td>
+                                                <td>Lorem</td>
+                                                <td><img style="width: 40px; height: 40px;" src="#"></td>
+                                            </tr>
+                                            <tr class="crm-contact">
+                                                <td> <input class="form-check-input" type="checkbox" id="checkboxNoLabel1"
+                                                        value="" aria-label="..."> </td>
+      
+                                                <td> 18 </td>
+                                                <td> Rehab Al-Ghamdi </td>
+                                                <td>Rehab@gmail.com</td>
+                                                <td>(783) 432-5300</td>   
+                                                <td>71151 Batoul Al-Suqair Passage, Building No. 49 Al-Zulfi</td> 
+                                                <td>14/01/2024</td>
+                                                <td>Progress</td>
+                                                <td>Alternator</td>
+                                                <td>TATA</td>
+                                                <td>New</td>
+                                                <td>14/01/2024</td>
+                                                <td>Lorem</td>
+                                                <td><img style="width: 40px; height: 40px;" src="#"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="card-footer border-top-0">
+                                <div class="d-flex align-items-center">
+                                    <div> Showing 10 Entries <i class="bi bi-arrow-right ms-2 fw-medium"></i> </div>
+                                    <div class="ms-auto">
+                                        <nav aria-label="Page navigation" class="pagination-style-5">
+                                            <ul class="pagination mb-0">
+                                                <li class="page-item disabled"> <a class="page-link"
+                                                        href="javascript:void(0);"> Prev </a> </li>
+                                                <li class="page-item active"><a class="page-link"
+                                                        href="javascript:void(0);">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a>
+                                                </li>
+                                                <li class="page-item"> <a class="page-link text-primary"
+                                                        href="javascript:void(0);"> next </a> </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
             </main>
