@@ -310,8 +310,6 @@ table.listing_time td label { min-width: 48%; }
 
 
   /* website */
-body, p, a, h1 h2, h3, h4, h5 ,h6{font-family: "Wix Madefor Text", serif !important;}
-
 header ul.navbar-nav a.nav-link { font-size: 16px; }
 .top-bar ul.nav li a { width: 24px; display: flex ; align-items: center; justify-content: center; height: 24px; background: #ffffff30; border-radius: 50%; padding: 7px; }
 
