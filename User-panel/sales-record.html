@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>User B1 Dashboard</title>
+  <title>Sales record</title>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
@@ -425,169 +425,329 @@
       </nav>
       <main class="content px-3 py-4">
         <div class="container-fluid">
-          <div class="mb-3">
-            <h4>Welcome Back, User B1</h4>
+
+          <h4 class="mb-3">Sales record</h4>
+          <div class="card">
+            <div class="card-body">
+              <div class="filters row mb-2">
+                <div class="col-md-2 col-6">
+                  <label class="mb-2 form-label">Car model</label>
+                  <select class="form-select form-control text-start" aria-label="Default select example">
+                    <option selected>Select</option>
+                    <option value="1">2010</option>
+                    <option value="2">2011</option>
+                    <option value="3">2012</option>
+                    <option value="3">2013</option>
+                    <option value="3">2014</option>
+                    <option value="3">2015</option>
+                    <option value="3">2016</option>
+                    <option value="3">2017</option>
+                    <option value="3">2018</option>
+                    <option value="3">2019</option>
+                    <option value="3">2020</option>
+                    <option value="3">2021</option>
+                    <option value="3">2022</option>
+                  </select>
+                </div>
+                <div class="col-md-2 col-6">
+                  <label class="mb-2 form-label">Car brand</label>
+                  <div class="dropdown">
+                    <button class="form-select form-control text-start" type="button" data-bs-toggle="dropdown">
+                      <span class="dropdown-text">Select</span>
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu p-2">
+                      <li>
+                        <label>
+                          <input type="checkbox" class="selectall" id="selectall" />
+                          <span class="select-text"> Select All</span>
+                        </label>
+                      </li>
+                      <li class="divider"></li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="option justone" /> Maruti Suzuki
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="option justone" /> Tata
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="option justone" /> Hyundai
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="option justone" /> Kia
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="option justone" /> Ford
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="option justone" /> Mitsubishi
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-2 col-6">
+                  <label class="mb-2 form-label">year from to</label>
+                  <input type="date" class="form-control">
+                </div>
+                <div class="col-md-2 col-6">
+                  <label class="mb-2 form-label">Date of responded</label>
+                  <input type="date" class="form-control">
+                </div>
+                <div class="col-md-2 col-6">
+                  <label class="mb-2 form-label">order from </label>
+                  <div class="dropdown">
+                    <button class="form-select form-control text-start" type="button" data-bs-toggle="dropdown">
+                      <span class="dropdown-text">By Roles</span>
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu p-2">
+                      <li>
+                        <label>
+                          <input type="checkbox" class="selectall" id="selectall" />
+                          <span class="select-text"> ALL </span>
+                        </label>
+                      </li>
+                      <li class="divider"></li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="option justone" /> my region
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="option justone" /> out of my region
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-2 col-6 d-flex align-items-end">
+                  <button type="submit" class="btn btn-primary w-auto px-4">Search</button>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="row">
-            <div class="col-xl-3">
-              <div class="card custom-card main-card-item primary bg-white">
-                <div class="card-body">
-                  <div class="d-flex align-items-start justify-content-between mb-3 flex-wrap">
-                    <div> <span class="d-block mb-3 fw-medium">Total car parts</span>
-                      <h3 class="fw-semibold lh-1 mb-0">321</h3>
-                    </div>
-                    <div class="text-end">
-                      <div class="mb-4"> <span class="avatar avatar-md bg-primary svg-white avatar-rounded"> <svg
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-                            <rect width="256" height="256" fill="none"></rect>
-                            <rect x="32" y="48" width="192" height="160" rx="8" fill="none" stroke="currentColor"
-                              stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></rect>
-                            <path d="M168,88a40,40,0,0,1-80,0" fill="none" stroke="currentColor" stroke-linecap="round"
-                              stroke-linejoin="round" stroke-width="16"></path>
-                          </svg> </span> </div>
-                    </div>
+          <div class="card custom-card">
+            <div class="card-header d-flex align-items-center justify-content-between flex-wrap gap-3">
+              <div class="row justify-content-between">
+                <div class="col-sm-auto">
+                  <form class="form-search">
+                    <i class="ph-duotone ph-magnifying-glass icon-search"></i>
+                    <input type="search" class="form-control" placeholder="Search...">
+                    <button class="btn btn-light-secondary btn-search">Search</button>
+                  </form>
+                </div>
+              </div>
+              <div class="row mx-0">
+                <div class="col-12 col-md-6">
+                  <select class="form-select form-control" aria-label="Default select example">
+                    <option selected>Sort By</option>
+                    <option value="1">By earlier orders</option>
+                    <option value="2">By more parts</option>
+                  </select>
+                </div>
+                <div class="col-12 col-md-6 text-end">
+                  <div class="dropdown sale_print">
+                    <button class="btn btn-success font-14 d-flex align-items-center gap-1" type="button"
+                      data-bs-toggle="dropdown">
+                      <span class="dropdown-text text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                          height="16" fill="#fff" class="bi bi-printer" viewBox="0 0 16 16">
+                          <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1" />
+                          <path
+                            d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1" />
+                        </svg> Save & print </span>
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu p-2">
+                      <li>
+                        <label>
+                          <input type="checkbox" class="selectall" id="selectall" />
+                          <span class="select-text"> Select All</span>
+                        </label>
+                      </li>
+                      <li class="divider"></li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="option justone" /> January
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="option justone" /> February
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="option justone" /> March
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="option justone" /> April
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="option justone" /> May
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="option justone" /> June
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="option justone" /> July
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="option justone" /> August
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="option justone" /> September
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="option justone" /> October
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="option justone" /> November
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="option justone" /> December
+                        </label>
+                      </li>
+                    </ul>
                   </div>
-                  <div class="d-flex align-items-center justify-content-between"> <a href="javascript:void(0);"
-                      class="text-muted text-decoration-underline fw-medium fs-13">View all
-                      sales</a> <span class="text-success"><i class="ti ti-arrow-narrow-up"></i>0.29%</span> </div>
                 </div>
               </div>
             </div>
-            <div class="col-xl-3">
-              <div class="card custom-card main-card-item bg-white">
-                <div class="card-body">
-                  <div class="d-flex align-items-start justify-content-between mb-3 flex-wrap">
-                    <div> <span class="d-block mb-3 fw-medium">Total review</span>
-                      <h3 class="fw-semibold lh-1 mb-0">14,145</h3>
-                    </div>
-                    <div class="text-end">
-                      <div class="mb-4"> <span class="avatar avatar-md bg-secondary svg-white avatar-rounded"> <svg
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-                            <rect width="256" height="256" fill="none"></rect>
-                            <line x1="128" y1="24" x2="128" y2="232" fill="none" stroke="currentColor"
-                              stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
-                            <path
-                              d="M184,88a40,40,0,0,0-40-40H112a40,40,0,0,0,0,80h40a40,40,0,0,1,0,80H104a40,40,0,0,1-40-40"
-                              fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                              stroke-width="16"></path>
-                          </svg> </span> </div>
-                    </div>
-                  </div>
-                  <div class="d-flex align-items-center justify-content-between"> <a href="javascript:void(0);"
-                      class="text-muted text-decoration-underline fw-medium fs-13">complete
-                      revenue</a> <span class="text-success"><i class="ti ti-arrow-narrow-up"></i>3.45%</span> </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3">
-              <div class="card custom-card main-card-item bg-white">
-                <div class="card-body">
-                  <div class="d-flex align-items-start justify-content-between mb-3 flex-wrap">
-                    <div> <span class="d-block mb-3 fw-medium">Total orders</span>
-                      <h3 class="fw-semibold lh-1 mb-0">4,678</h3>
-                    </div>
-                    <div class="text-end">
-                      <div class="mb-4"> <span class="avatar avatar-md bg-success svg-white avatar-rounded"> <svg
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-                            <rect width="256" height="256" fill="none"></rect>
-                            <circle cx="84" cy="108" r="52" fill="none" stroke="currentColor" stroke-linecap="round"
-                              stroke-linejoin="round" stroke-width="16"></circle>
-                            <path d="M10.23,200a88,88,0,0,1,147.54,0" fill="none" stroke="currentColor"
-                              stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
-                            <path d="M172,160a87.93,87.93,0,0,1,73.77,40" fill="none" stroke="currentColor"
-                              stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
-                            <path d="M152.69,59.7A52,52,0,1,1,172,160" fill="none" stroke="currentColor"
-                              stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path>
-                          </svg> </span> </div>
-                    </div>
-                  </div>
-                  <div class="d-flex align-items-center justify-content-between"> <a href="javascript:void(0);"
-                      class="text-muted text-decoration-underline fw-medium fs-13">Total
-                      page views</a> <span class="text-success"><i class="ti ti-arrow-narrow-up"></i>11.54%</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3">
-              <div class="card custom-card main-card-item bg-white">
-                <div class="card-body">
-                  <div class="d-flex align-items-start justify-content-between mb-3 flex-wrap">
-                    <div> <span class="d-block mb-3 fw-medium">Countries</span>
-                      <h3 class="fw-semibold lh-1 mb-0">645</h3>
-                    </div>
-                    <div class="text-end">
-                      <div class="mb-4"> <span class="avatar avatar-md bg-info svg-white avatar-rounded"> <svg
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-                            <rect width="256" height="256" fill="none"></rect>
-                            <path
-                              d="M40,56V184a16,16,0,0,0,16,16H216a8,8,0,0,0,8-8V80a8,8,0,0,0-8-8H56A16,16,0,0,1,40,56h0A16,16,0,0,1,56,40H192"
-                              fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                              stroke-width="16"></path>
-                            <circle cx="180" cy="132" r="12"></circle>
-                          </svg> </span> </div>
-                    </div>
-                  </div>
-                  <div class="d-flex align-items-center justify-content-between"> <a href="javascript:void(0);"
-                      class="text-muted text-decoration-underline fw-medium fs-13">Total
-                      profit earned</a> <span class="text-success"><i class="ti ti-arrow-narrow-up"></i>0.18%</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+            <div class="card-body p-0">
+              <div class="table-responsive">
+                <table class="table text-nowrap">
+                  <thead>
+                    <tr>
+                      <th scope="col"> <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value=""
+                          aria-label="..."> </th>
+                      <th scope="col">Order #</th>
+                      <th scope="col">date of order</th>
+                      <th scope="col">Country, city</th>
+                      <th scope="col">Car model</th>
+                      <th scope="col">year</th>
+                      <th scope="col">Brand</th>
+                      <th scope="col">Supbrand</th>
+                      <th scope="col">Parts</th>
+                      <th scope="col">Condtion</th>
+                      <th scope="col">Warranty</th>
+                      <th scope="col">Price</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="crm-contact">
+                      <td> <input class="form-check-input" type="checkbox" id="checkboxNoLabel1" value=""
+                          aria-label="..."> </td>
 
-          <div class="col-sm-12">
-            <div class="card table-card">
-              <div class="card-header">
-                <h5>Recent Orders</h5>
+                      <td> #57 </td>
+                      <td>15/04/2022</td>
+                      <td>Lorem Ipsum dummy</td>
+                      <td>2008</td>
+                      <td>2018</td>
+                      <td>Toyota</td>
+                      <td>Toyota</td>
+                      <td>Cylinder Head</td>
+                      <td>New</td>
+                      <td>2014 to 2028</td>
+                      <td>$352</td>
+                    </tr>
+                    <tr class="crm-contact">
+                      <td> <input class="form-check-input" type="checkbox" id="checkboxNoLabel1" value=""
+                          aria-label="..."> </td>
+
+                      <td> #57 </td>
+                      <td>15/04/2022</td>
+                      <td>Lorem Ipsum dummy</td>
+                      <td>2008</td>
+                      <td>2018</td>
+                      <td>Toyota</td>
+                      <td>Toyota</td>
+                      <td>Cylinder Head</td>
+                      <td>New</td>
+                      <td>2014 to 2028</td>
+                      <td>$352</td>
+                    </tr>
+                    <tr class="crm-contact">
+                      <td> <input class="form-check-input" type="checkbox" id="checkboxNoLabel1" value=""
+                          aria-label="..."> </td>
+
+                      <td> #57 </td>
+                      <td>15/04/2022</td>
+                      <td>Lorem Ipsum dummy</td>
+                      <td>2008</td>
+                      <td>2018</td>
+                      <td>Toyota</td>
+                      <td>Toyota</td>
+                      <td>Cylinder Head</td>
+                      <td>New</td>
+                      <td>2014 to 2028</td>
+                      <td>$352</td>
+                    </tr>
+                    <tr class="crm-contact">
+                      <td> <input class="form-check-input" type="checkbox" id="checkboxNoLabel1" value=""
+                          aria-label="..."> </td>
+
+                      <td> #57 </td>
+                      <td>15/04/2022</td>
+                      <td>Lorem Ipsum dummy</td>
+                      <td>2008</td>
+                      <td>2018</td>
+                      <td>Toyota</td>
+                      <td>Toyota</td>
+                      <td>Cylinder Head</td>
+                      <td>New</td>
+                      <td>2014 to 2028</td>
+                      <td>$352</td>
+                    </tr>
+                </table>
               </div>
-              <div class="card-body p-0">
-                <div class="table-responsive">
-                  <table class="table">
-                    <tbody>
-                      <tr>
-                        <th>Image</th>
-                        <th>Order Code</th>
-                        <th>Customer</th>
-                        <th>Purchased On</th>
-                        <th>Status</th>
-                        <th>Transaction ID</th>
-                      </tr>
-                      <tr>
-                        <td><img src="../assets/images/widget/p1.jpg" alt="prod img" class="img-fluid"></td>
-                        <td>PNG002413</td>
-                        <td>Jane Elliott</td>
-                        <td>06-01-2017</td>
-                        <td><span class="badge bg-primary">Shipping</span></td>
-                        <td>#7234421</td>
-                      </tr>
-                      <tr>
-                        <td><img src="../assets/images/widget/p2.jpg" alt="prod img" class="img-fluid"></td>
-                        <td>PNG002344</td>
-                        <td>John Deo</td>
-                        <td>05-01-2017</td>
-                        <td><span class="badge bg-danger">Failed</span></td>
-                        <td>#7234486</td>
-                      </tr>
-                      <tr>
-                        <td><img src="../assets/images/widget/p3.jpg" alt="prod img" class="img-fluid"></td>
-                        <td>PNG002653</td>
-                        <td>Eugine Turner</td>
-                        <td>04-01-2017</td>
-                        <td><span class="badge bg-success">Delivered</span></td>
-                        <td>#7234417</td>
-                      </tr>
-                      <tr>
-                        <td><img src="../assets/images/widget/p4.jpg" alt="prod img" class="img-fluid"></td>
-                        <td>PNG002156</td>
-                        <td>Jacqueline Howell</td>
-                        <td>03-01-2017</td>
-                        <td><span class="badge bg-warning">Pending</span></td>
-                        <td>#7234454</td>
-                      </tr>
-                    </tbody>
-                  </table>
+            </div>
+            <div class="card-footer border-top-0">
+              <div class="d-flex align-items-center">
+                <div> Showing 10 Entries <i class="bi bi-arrow-right ms-2 fw-medium"></i> </div>
+                <div class="ms-auto">
+                  <nav aria-label="Page navigation" class="pagination-style-5">
+                    <ul class="pagination mb-0">
+                      <li class="page-item disabled"> <a class="page-link" href="javascript:void(0);"> Prev </a> </li>
+                      <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+                      <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a>
+                      </li>
+                      <li class="page-item"> <a class="page-link text-primary" href="javascript:void(0);"> next </a>
+                      </li>
+                    </ul>
+                  </nav>
                 </div>
               </div>
             </div>

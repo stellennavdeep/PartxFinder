@@ -181,8 +181,9 @@ nav.navbar span.navbar-toggler-icon { filter: invert(1) brightness(0.0);}
 .bg-success { background: #599b2e !important; }
 .table_title { text-align: center; background: #78ce78; font-size: 18px; color: #000; }
 table.border-dark td, table.border-dark th { border-color: #00000036; color: #000; }
-.active>.page-link, .page-link.active {background-color: #d66a30;border-color: #d66a30;}
-.page-link{color: #d66a30;}
+.active>.page-link, .page-link.active {background-color: #2f4858;border-color: #2f4858;}
+.page-link, a.page-link.text-primary{color: #2f4858;}
+.page-link.text-primary{color: #2f4858 !important;}
 .text-primary{color: #d66a30 !important;}
 
 /* login */

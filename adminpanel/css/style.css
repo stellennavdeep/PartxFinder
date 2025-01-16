@@ -181,8 +181,9 @@ nav.navbar span.navbar-toggler-icon { filter: invert(1) brightness(0.0);}
 .bg-success { background: #599b2e !important; }
 .table_title { text-align: center; background: #78ce78; font-size: 18px; color: #000; }
 table.border-dark td, table.border-dark th { border-color: #00000036; color: #000; }
-.active>.page-link, .page-link.active {background-color: #d66a30;border-color: #d66a30;}
-.page-link{color: #d66a30;}
+.active>.page-link, .page-link.active {background-color: #2f4858;border-color: #2f4858;}
+.page-link, a.page-link.text-primary{color: #2f4858;}
+.page-link.text-primary{color: #2f4858 !important;}
 .text-primary{color: #d66a30 !important;}
 
 /* login */
@@ -211,7 +212,6 @@ body.collapsed aside#sidebar a.sidebar-link::after { top: 14px; right: 10px; }
     body.collapsed aside#sidebar{right: 0;}
 
 }
-
 
 
 
@@ -306,15 +306,17 @@ table.listing_time td label { min-width: 48%; }
     }
   }
 
-
-
-
-  /* website */
+/* website */
 header ul.navbar-nav a.nav-link { font-size: 16px; }
 .top-bar ul.nav li a { width: 24px; display: flex ; align-items: center; justify-content: center; height: 24px; background: #ffffff30; border-radius: 50%; padding: 7px; }
-
 .home_banner .banner_inner { min-height: 440px; }
 .home_banner .banner_inner a.btn { border-radius: 30px; padding-inline: 20px; font-size: 16px; font-weight: 500 !important; }
 .home_banner .banner_inner a.btn:hover{opacity: 0.8;}
 .home_banner .banner_inner h1 { font-size: 48px; color: #3A3939 !important;font-weight: 800 !important;}
   
+/* login-page */
+.form-control { font-size: 14px; box-shadow: unset !important; min-height: 41px; }
+section.login-page .right.col-12 { min-height: 340px; }
+
+
+

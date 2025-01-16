@@ -388,58 +388,273 @@
             </nav>
             <main class="content px-3 py-4">
                 <div class="container-fluid">
-                    <!-- New admin page-->
-                     <h4 class="mb-3">Personal Details</h4>
 
-                    <!-- create-admin -->
-                    <div class="card custom-card p-4">
-                        <form class="row">
-                            <div class="mb-3 col-6">
-                                <label class="form-label">Name</label>
-                                <input type="email" class="form-control">
+                    <h4 class="mb-3">All market orders</h4>
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="filters row mb-2">
+                        <div class="col-md-2 col-6">
+                            <label class="mb-2 form-label">Car model</label>
+                            <select class="form-select form-control text-start" aria-label="Default select example">
+                                <option selected>Select</option>
+                                <option value="1">2010</option>
+                                <option value="2">2011</option>
+                                <option value="3">2012</option>
+                                <option value="3">2013</option>
+                                <option value="3">2014</option>
+                                <option value="3">2015</option>
+                                <option value="3">2016</option>
+                                <option value="3">2017</option>
+                                <option value="3">2018</option>
+                                <option value="3">2019</option>
+                                <option value="3">2020</option>
+                                <option value="3">2021</option>
+                                <option value="3">2022</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 col-6">
+                            <label class="mb-2 form-label">Car brand</label>
+                            <div class="dropdown">
+                                <button class="form-select form-control text-start" type="button" data-bs-toggle="dropdown">
+                                    <span class="dropdown-text">Select</span>
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu p-2">
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" class="selectall" id="selectall" />
+                                            <span class="select-text"> Select All</span>
+                                        </label>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" class="option justone" /> Maruti Suzuki
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" class="option justone" /> Tata
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox" class="option justone" /> Hyundai
+                                        </label>
+                                    </li>
+                                    <li>
+                                      <label>
+                                          <input type="checkbox" class="option justone" /> Kia
+                                      </label>
+                                  </li>
+                                  <li>
+                                    <label>
+                                        <input type="checkbox" class="option justone" /> Ford
+                                    </label>
+                                </li>
+                                <li>
+                                  <label>
+                                      <input type="checkbox" class="option justone" /> Mitsubishi 
+                                  </label>
+                              </li>
+                                </ul>
                             </div>
-                            <div class="mb-3 col-6">
-                                <label class="form-label">Mobile</label>
-                                <input type="number" class="form-control">
-                            </div>
-                          
-                            <div class="mb-3 col-6">
-                                <label class="form-label">Address</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="mb-3 col-6">
-                                <label class="form-label">Country</label>
-                                <select class="form-select form-control text-start" aria-label="Default select example">
-                                    <option value="">USA</option>
-                                    <option value="8-1">Dubai</option>
-                                    <option value="11-1">japan</option>
-                                </select>
-                            </div>
-                            <div class="mb-3 col-6">
-                                <label class="form-label">City</label>
-                                <select class="form-select form-control text-start" aria-label="Default select example">
-                                    <option value="">USA</option>
-                                    <option value="8-1">Dubai</option>
-                                    <option value="11-1">japan</option>
-                                </select>
-                            </div>
-                            <div class="mb-3 col-6">
-                                <label class="form-label">Code activate</label>
-                                <input type="text" class="form-control">
-                            </div>
-                           
-
-                            <div class="text-end">
-                                <button type="submit" class="btn btn-primary w-auto px-4">Save</button>
-                            </div>
-                        </form>
-                        
+                        </div>
+                        <div class="col-md-2 col-6">
+                            <label class="mb-2 form-label">year from to</label>
+                            <input type="date" class="form-control">
+                        </div>
+                        <div class="col-md-2 col-6">
+                            <label class="mb-2 form-label">order from </label>
+                            <div class="dropdown">
+                              <button class="form-select form-control text-start" type="button" data-bs-toggle="dropdown">
+                                  <span class="dropdown-text">By Roles</span>
+                                  <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu p-2">
+                                  <li>
+                                      <label>
+                                          <input type="checkbox" class="selectall" id="selectall" />
+                                          <span class="select-text"> ALL </span>
+                                      </label>
+                                  </li>
+                                  <li class="divider"></li>
+                                  <li>
+                                      <label>
+                                          <input type="checkbox" class="option justone" /> my region
+                                      </label>
+                                  </li>
+                                  <li>
+                                      <label>
+                                          <input type="checkbox" class="option justone" />  out of my region
+                                      </label>
+                                  </li>
+                              </ul>
+                          </div>
+                        </div>
+                        <div class="col-md-2 col-6 d-flex align-items-end">
+                            <button type="submit" class="btn btn-primary w-auto px-4">Search</button>
+                        </div>
                     </div>
-                     
-                  
+                    </div>
+                  </div>
 
-                    <!-- New admin page-->
+                    <div class="card custom-card">
+                        <div class="card-header d-flex align-items-center justify-content-between flex-wrap gap-3">
+                            <div class="row justify-content-between">
+                                <div class="col-sm-auto">
+                                    <form class="form-search">
+                                        <i class="ph-duotone ph-magnifying-glass icon-search"></i>
+                                        <input type="search" class="form-control" placeholder="Search...">
+                                        <button class="btn btn-light-secondary btn-search">Search</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-6">
+                                <select class="form-select form-control" aria-label="Default select example">
+                                    <option selected>Sort By</option>
+                                    <option value="1">By earlier orders</option>
+                                    <option value="2">By more parts</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                                <table class="table text-nowrap">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"> <input class="form-check-input" type="checkbox"
+                                                    id="checkboxNoLabel" value="" aria-label="..."> </th>
+                                            <th scope="col">Order #</th>
+                                            <th scope="col">year</th>
+                                            <th scope="col">supbrand</th>
+                                            <th scope="col">Order come from
+                                              country , city</th>
+                                            <th scope="col">Time and date of order</th>
+                                            <th scope="col">Parts</th>
+                                            <th scope="col">PRICE</th>
+                                            <th scope="col">Condtion</th>
+                                            <th scope="col">Warranty</th>
+                                            <th scope="col">Notice</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="crm-contact">
+                                            <td> <input class="form-check-input" type="checkbox" id="checkboxNoLabel1"
+                                                    value="" aria-label="..."> </td>
 
+                                            <td> #57 </td>
+                                            <td>15/04/2022</td>
+                                            <td>Toyota</td>
+                                            <td>Lorem Ipsum dummy</td>
+                                            <td><span class="d-block">5:68 AM</span>15/04/2022</td>
+                                             <td>Cylinder Head</td>
+                                             <td>$352</td>
+                                            <td>New</td>
+                                            <td>2014 to 2028</td>
+                                            <td>Lorem Ipsum is simply dummy <br>text of the printing and typesetting industry.</td>
+                                        </tr>
+                                        <tr class="crm-contact">
+                                          <td> <input class="form-check-input" type="checkbox" id="checkboxNoLabel1"
+                                                  value="" aria-label="..."> </td>
+
+                                          <td> #57 </td>
+                                          <td>15/04/2022</td>
+                                          <td>Toyota</td>
+                                          <td>Lorem Ipsum dummy</td>
+                                          <td><span class="d-block">5:68 AM</span>15/04/2022</td>
+                                           <td>Cylinder Head</td>
+                                           <td>$352</td>
+                                          <td>New</td>
+                                          <td>2014 to 2028</td>
+                                          <td>Lorem Ipsum is simply dummy <br>text of the printing and typesetting industry.</td>
+                                      </tr>
+                                      <tr class="crm-contact">
+                                        <td> <input class="form-check-input" type="checkbox" id="checkboxNoLabel1"
+                                                value="" aria-label="..."> </td>
+
+                                        <td> #57 </td>
+                                        <td>15/04/2022</td>
+                                        <td>Toyota</td>
+                                        <td>Lorem Ipsum dummy</td>
+                                        <td><span class="d-block">5:68 AM</span>15/04/2022</td>
+                                         <td>Cylinder Head</td>
+                                         <td>$352</td>
+                                        <td>New</td>
+                                        <td>2014 to 2028</td>
+                                        <td>Lorem Ipsum is simply dummy <br>text of the printing and typesetting industry.</td>
+                                    </tr>
+                                    <tr class="crm-contact">
+                                      <td> <input class="form-check-input" type="checkbox" id="checkboxNoLabel1"
+                                              value="" aria-label="..."> </td>
+
+                                      <td> #57 </td>
+                                      <td>15/04/2022</td>
+                                      <td>Toyota</td>
+                                      <td>Lorem Ipsum dummy</td>
+                                      <td><span class="d-block">5:68 AM</span>15/04/2022</td>
+                                       <td>Cylinder Head</td>
+                                       <td>$352</td>
+                                      <td>New</td>
+                                      <td>2014 to 2028</td>
+                                      <td>Lorem Ipsum is simply dummy <br>text of the printing and typesetting industry.</td>
+                                  </tr>
+                                  <tr class="crm-contact">
+                                    <td> <input class="form-check-input" type="checkbox" id="checkboxNoLabel1"
+                                            value="" aria-label="..."> </td>
+
+                                    <td> #57 </td>
+                                    <td>15/04/2022</td>
+                                    <td>Toyota</td>
+                                    <td>Lorem Ipsum dummy</td>
+                                    <td><span class="d-block">5:68 AM</span>15/04/2022</td>
+                                     <td>Cylinder Head</td>
+                                     <td>$352</td>
+                                    <td>New</td>
+                                    <td>2014 to 2028</td>
+                                    <td>Lorem Ipsum is simply dummy <br>text of the printing and typesetting industry.</td>
+                                </tr>
+                                <tr class="crm-contact">
+                                  <td> <input class="form-check-input" type="checkbox" id="checkboxNoLabel1"
+                                          value="" aria-label="..."> </td>
+
+                                  <td> #57 </td>
+                                  <td>15/04/2022</td>
+                                  <td>Toyota</td>
+                                  <td>Lorem Ipsum dummy</td>
+                                  <td><span class="d-block">5:68 AM</span>15/04/2022</td>
+                                   <td>Cylinder Head</td>
+                                   <td>$352</td>
+                                  <td>New</td>
+                                  <td>2014 to 2028</td>
+                                  <td>Lorem Ipsum is simply dummy <br>text of the printing and typesetting industry.</td>
+                              </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card-footer border-top-0">
+                            <div class="d-flex align-items-center">
+                                <div> Showing 10 Entries <i class="bi bi-arrow-right ms-2 fw-medium"></i> </div>
+                                <div class="ms-auto">
+                                    <nav aria-label="Page navigation" class="pagination-style-5">
+                                        <ul class="pagination mb-0">
+                                            <li class="page-item disabled"> <a class="page-link"
+                                                    href="javascript:void(0);"> Prev </a> </li>
+                                            <li class="page-item active"><a class="page-link"
+                                                    href="javascript:void(0);">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a>
+                                            </li>
+                                            <li class="page-item"> <a class="page-link text-primary"
+                                                    href="javascript:void(0);"> next </a> </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </main>
 
