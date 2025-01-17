@@ -404,15 +404,40 @@
                                                     value="" aria-label="..."> </td>
 
                                             <td> #37 </td>
-                                            <td>15/04/2022</td>
+                                            <td>4</td>
+                                            <td>#</td>
                                             <td>Toyota</td>
-                                            <td>Toyota</td>
-                                            <td>Lorem Ipsum dummy</td>
                                             <td><span class="d-block">5:68 AM</span>15/04/2022</td>
-                                            <td>Lorem Ipsum dummy</td>
-                                            <td> $ 5000</td>
-                                            <td><button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary btn-sm me-2">Yes I have</button> <button type="button" class="btn btn-danger btn-sm">Don’t have</button></td>
+                                            <td> <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-info text-white btn-sm me-2">update</button></td>
+                                            <td> <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-danger btn-sm me-2">Cancel</button></td>
+                                            <td> <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success btn-sm me-2">sold</button></td>
                                         </tr>
+                                        <tr class="crm-contact">
+                                          <td> <input class="form-check-input" type="checkbox" id="checkboxNoLabel1"
+                                                  value="" aria-label="..."> </td>
+
+                                          <td> #37 </td>
+                                          <td>4</td>
+                                          <td>#</td>
+                                          <td>Toyota</td>
+                                          <td><span class="d-block">5:68 AM</span>15/04/2022</td>
+                                          <td> <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-info text-white btn-sm me-2">update</button></td>
+                                          <td> <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-danger btn-sm me-2">Cancel</button></td>
+                                          <td> <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success btn-sm me-2">sold</button></td>
+                                      </tr>
+                                      <tr class="crm-contact">
+                                        <td> <input class="form-check-input" type="checkbox" id="checkboxNoLabel1"
+                                                value="" aria-label="..."> </td>
+
+                                        <td> #37 </td>
+                                        <td>4</td>
+                                        <td>#</td>
+                                        <td>Toyota</td>
+                                        <td><span class="d-block">5:68 AM</span>15/04/2022</td>
+                                        <td> <button type="button" class="btn btn-info text-white btn-sm me-2">update</button></td>
+                                        <td> <button type="button"class="btn btn-danger btn-sm me-2">Cancel</button></td>
+                                        <td> <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success btn-sm me-2">sold</button></td>
+                                    </tr>
                                       
                                 </table>
                             </div>
@@ -449,35 +474,37 @@
     <script src="../adminpanel/js/script.js"></script>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl">
+<div class="modal fade userB1" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       <div class="modal-body">
-        <h4 class="mb-4 w-100 text-center h3">All market offer cars</h4>
-        <div class="table-responsive">
-          <table class="table text-nowrap">
-              <thead>
-                  <tr>
-                      <th scope="col" style="min-width: 140px;">Car conditions</th>
-                      <th scope="col" style="min-width: 240px;">Upload Pictures, videos</th>
-                      <th scope="col" style="min-width: 140px;">Price</th>
-                      <th scope="col"  style="min-width: 160px;">Contact Preferences</th>
-                      <th scope="col">Action</th> 
-                  </tr>
-              </thead>
-              <tbody>
-                  <tr class="crm-contact">
-                     
-                              <td><input type="text" class="form-control"></td>
-                              <td><input type="file" class="form-control"></td>
-                              <td><input type="text" class="form-control">  </td>
-                              <td><input type="text" class="form-control">  </td>
-                              <td><button class="btn btn-primary btn-sm px-3">Submit</button></td>
-                  </tr>
-               
-          </table>
-      </div>
+        <h4 class="mb-4 w-100 text-center h3">Sales record</h4>
+        <div class="row mx-0">
+          <div class="col-12 col-md-6 mb-3">
+            <label class="mb-2 form-label">Offer #</label>
+            <input type="text" class="form-control">
+           </div>
+           <div class="col-12 col-md-6 mb-3">
+            <label class="mb-2 form-label">Types of metals</label>
+            <input type="text" class="form-control">
+           </div>
+           <div class="col-12 col-md-6 mb-3">
+            <label class="mb-2 form-label">Type of measurement</label>
+            <input type="file" class="form-control">
+           </div>
+           <div class="col-12 col-md-6 mb-3">
+            <label class="mb-2 form-label">Price</label>
+            <input type="text" class="form-control">
+           </div>
+           <div class="col-12 col-md-6 mb-3">
+            <label class="mb-2 form-label">date</label>
+            <input type="date" class="form-control">
+           </div>
+           <div class="col-12 text-end">
+              <button type="button" class="btn btn-primary px-4">Update & Save</button>
+           </div>
+        </div>
       </div>
     </div>
   </div>

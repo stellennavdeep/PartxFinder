@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sales record</title>
+  <title>order Respond record </title>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
@@ -16,7 +16,7 @@
     <aside id="sidebar" class="js-sidebar">
       <!-- Content For Sidebar -->
       <div class="h-100">
-        <div class="sidebar-logo text-center">
+        <div class="sidebar-logo">
           <a href="#">PartxFinder</a>
         </div>
         <ul class="sidebar-nav">
@@ -37,43 +37,72 @@
             </a>
           </li>
           <li class="sidebar-item">
-            <a href="new-offer.html" class="sidebar-link collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam" viewBox="0 0 16 16">
-              <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2zm3.564 1.426L5.596 5 8 5.961 14.154 3.5zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
-            </svg>
-            New Offer
+            <a href="recycling-order.html" class="sidebar-link collapsed"><svg xmlns="http://www.w3.org/2000/svg"
+                width="16" height="16" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                <path
+                  d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+              </svg>
+              Recycling Market Order
             </a>
           </li>
           <li class="sidebar-item">
-            <a href="offer-record-update.html" class="sidebar-link collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-boxes" viewBox="0 0 16 16">
-              <path d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434zM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567zM7.5 9.933l-2.75 1.571v3.134l2.75-1.571zm1 3.134 2.75 1.571v-3.134L8.5 9.933zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567zm2.242-2.433V3.504L8.5 5.076V8.21zM7.5 8.21V5.076L4.75 3.504v3.134zM5.258 2.643 8 4.21l2.742-1.567L8 1.076zM15 9.933l-2.75 1.571v3.134L15 13.067zM3.75 14.638v-3.134L1 9.933v3.134z"/>
-            </svg>
-              Offer record and update
+            <a href="favorites.html" class="sidebar-link collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0M14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1M8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132" />
+              </svg>
+              My Favorites
             </a>
           </li>
           <li class="sidebar-item">
-            <a href="sales-record.html" class="sidebar-link collapsed"><svg xmlns="http://www.w3.org/2000/svg"
-              width="16" height="16" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
-              <path
-                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
-            </svg>
-              Sales record
+            <a href="favorite-setting.html" class="sidebar-link collapsed"><svg xmlns="http://www.w3.org/2000/svg"
+                width="16" height="16" fill="currentColor" class="bi bi-sliders" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1z" />
+              </svg>
+              Favorite Setting
             </a>
           </li>
-        
           <li class="sidebar-item">
-            <a href="#" class="sidebar-link collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                height="16" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+            <a href="Interested-record.html" class="sidebar-link collapsed"><svg xmlns="http://www.w3.org/2000/svg"
+                width="16" height="16" fill="currentColor" class="bi bi-journal-text" viewBox="0 0 16 16">
+                <path
+                  d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5" />
+                <path
+                  d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2" />
+                <path
+                  d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z" />
+              </svg>
+              Interested Record
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="buying-record.html" class="sidebar-link collapsed"><svg xmlns="http://www.w3.org/2000/svg"
+                width="16" height="16" fill="currentColor" class="bi bi-journal-medical" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 4a.5.5 0 0 1 .5.5v.634l.549-.317a.5.5 0 1 1 .5.866L9 6l.549.317a.5.5 0 1 1-.5.866L8.5 6.866V7.5a.5.5 0 0 1-1 0v-.634l-.549.317a.5.5 0 1 1-.5-.866L7 6l-.549-.317a.5.5 0 0 1 .5-.866l.549.317V4.5A.5.5 0 0 1 8 4M5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5" />
+                <path
+                  d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2" />
+                <path
+                  d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z" />
+              </svg>
+              Buying Record
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
                 <path
                   d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
                 <path
                   d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5" />
               </svg>
-              Message record
+              Text Message record
             </a>
           </li>
           <li class="sidebar-item">
-            <a href="#" class="sidebar-link collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                height="16" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
+            <a href="#" class="sidebar-link collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
                 <path
                   d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
                 <path
@@ -399,7 +428,73 @@
       <main class="content px-3 py-4">
         <div class="container-fluid">
 
-          <h4 class="mb-3">Sales record</h4>
+          <h4 class="mb-3">Buying Record</h4>
+          <div class="card">
+            <div class="card-body">
+              <div class="filters row mb-2">
+                <div class="col-md-2 col-6">
+                  <label class="mb-2 form-label">Types of Metals</label>
+                  <div class="dropdown">
+                    <button class="form-select form-control text-start" type="button" data-bs-toggle="dropdown">
+                      <span class="dropdown-text">Cooper</span>
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu p-2">
+                      <li>
+                        <label>
+                          <input type="checkbox" class="selectall" id="selectall" />
+                          <span class="select-text"> Alluminium </span>
+                        </label>
+                      </li>
+                      <li class="divider"></li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="option justone" /> Steel
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="option justone" /> Iron
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-2 col-6">
+                  <label class="mb-2 form-label">order from </label>
+                  <div class="dropdown">
+                    <button class="form-select form-control text-start" type="button" data-bs-toggle="dropdown">
+                      <span class="dropdown-text">By Roles</span>
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu p-2">
+                      <li>
+                        <label>
+                          <input type="checkbox" class="selectall" id="selectall" />
+                          <span class="select-text"> ALL </span>
+                        </label>
+                      </li>
+                      <li class="divider"></li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="option justone" /> my region
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="option justone" /> out of my region
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="col-md-2 col-6 d-flex align-items-end">
+                  <button type="submit" class="btn btn-primary w-auto px-4">Search</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div class="card custom-card">
             <div class="card-header d-flex align-items-center justify-content-between flex-wrap gap-3">
@@ -412,8 +507,88 @@
                   </form>
                 </div>
               </div>
-              <div class="row mx-0">
-                <div class="col-12 col-md-12">
+              <div class="row justify-content-end align-items-center flex-nowrap mx-0">
+                <div class="col-auto">
+                  <div class="dropdown sale_print">
+                    <button class="btn btn-success font-14 d-flex align-items-center gap-1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="dropdown-text text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-printer" viewBox="0 0 16 16">
+                          <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1"></path>
+                          <path d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1"></path>
+                        </svg> Save &amp; print </span>
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu p-2" style="">
+                      <li>
+                        <label>
+                          <input type="checkbox" class="selectall" id="selectall">
+                          <span class="select-text"> Select All</span>
+                        </label>
+                      </li>
+                      <li class="divider"></li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="option justone"> January
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="option justone"> February
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="option justone"> March
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="option justone"> April
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="option justone"> May
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="option justone"> June
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="option justone"> July
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="option justone"> August
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="option justone"> September
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="option justone"> October
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="option justone"> November
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="checkbox" class="option justone"> December
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-auto">
                   <select class="form-select form-control" aria-label="Default select example">
                     <option selected>Sort By</option>
                     <option value="1">By earlier orders</option>
@@ -423,17 +598,22 @@
               </div>
             </div>
             <div class="card-body p-0">
-              <div class="table-responsive">
+              <div class="table-responsive px-3 pt-3">
                 <table class="table text-nowrap">
                   <thead>
                     <tr>
                       <th scope="col"> <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value=""
                           aria-label="..."> </th>
                       <th scope="col">Offer #</th>
-                      <th scope="col">Types of metals</th>
-                      <th scope="col">#</th>
-                      <th scope="col">Type of measurement</th>
-                      <th scope="col">Price & date</th>
+                      <th scope="col">Types of Metals</th>
+                      <th scope="col"># Quantity</th>
+                      <th scope="col">Measurement</th>
+                      <th scope="col">Order come from
+                        country , city</th>
+                      <th scope="col">Time and date of order</th>
+                      <th scope="col">Shop Name</th>
+                      <th scope="col">Date of Purchasing</th>
+                      <th scope="col">Price</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -442,31 +622,44 @@
                           aria-label="..."> </td>
 
                       <td> #57 </td>
+                      <td>Alluminium</td>
+                      <td>2kg</td>
+                      <td></td>
                       <td>Lorem Ipsum dummy</td>
-                      <td>##</td>
-                      <td>Lorem Ipsum dummy</td>
-                      <td>$452<br> 15/04/2022</td>
+                      <td><span class="d-block">5:68 AM</span>15/04/2022</td>
+                      <td>Lorem</td>
+                      <td>12/12/2012</td>
+                      <td>5000 AED</td>
                     </tr>
                     <tr class="crm-contact">
                       <td> <input class="form-check-input" type="checkbox" id="checkboxNoLabel1" value=""
                           aria-label="..."> </td>
 
                       <td> #57 </td>
+                      <td>Steel</td>
+                      <td>5kg</td>
+                      <td></td>
                       <td>Lorem Ipsum dummy</td>
-                      <td>##</td>
-                      <td>Lorem Ipsum dummy</td>
-                      <td>$452<br> 15/04/2022</td>
+                      <td><span class="d-block">5:68 AM</span>15/04/2022</td>
+                      <td>Lorem</td>
+                      <td>12/12/2012</td>
+                      <td>5000 AED</td>
                     </tr>
                     <tr class="crm-contact">
                       <td> <input class="form-check-input" type="checkbox" id="checkboxNoLabel1" value=""
                           aria-label="..."> </td>
 
                       <td> #57 </td>
+                      <td>Iron</td>
+                      <td>10kg</td>
+                      <td></td>
                       <td>Lorem Ipsum dummy</td>
-                      <td>##</td>
-                      <td>Lorem Ipsum dummy</td>
-                      <td>$452<br> 15/04/2022</td>
+                      <td><span class="d-block">5:68 AM</span>15/04/2022</td>
+                      <td>Lorem</td>
+                      <td>12/12/2012</td>
+                      <td>5000 AED</td>
                     </tr>
+
                 </table>
               </div>
             </div>
@@ -496,9 +689,11 @@
 
     </div>
   </div>
-  <script src="../adminpanel/js/bootstrap.js"></script>
-  <script src="../adminpanel/js/script.js"></script>
-
+  <!-- <script src="../adminpanel/js/bootstrap.js"></script>
+  <script src="../adminpanel/js/script.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
 </body>
 
