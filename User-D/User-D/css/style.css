@@ -238,7 +238,7 @@ aside#sidebar {background: #222;}
 /* user panel */
 button.btn-close { position: absolute; right: -15px; width: 30px; height: 30px; background-color: #ffffff; opacity: 1 !important; z-index: 999; border-radius: 50%; filter: invert(1); top: -15px; }
 
-
+.dropdown.sale_print ul li label { font-size: 14px; display: flex ; align-items: center; gap: 10px; }
 
 @keyframes ring {
     0% {

@@ -213,8 +213,6 @@ body.collapsed aside#sidebar a.sidebar-link::after { top: 14px; right: 10px; }
 
 }
 
-
-
 /* sub-admin */
 aside#sidebar {background: #040918;}
 .navbar-expand .navbar-nav .form-outline input {border-radius: 6px 0 0 6px;}
@@ -320,3 +318,9 @@ section.login-page .right.col-12 { min-height: 340px; }
 
 
 
+/* create-admin */
+.table_head { cursor: pointer; position: relative;}
+.table_head:after { content: ''; border-right: 2px solid; border-bottom: 2px solid; display: inline-block; width: 10px; height: 10px; position: absolute; right: 20px; top: 15px; transform: rotate(45deg); }
+
+h4.table_head:after { top: 6px; right: -25px; }
+h4.table_head { width: fit-content; }
