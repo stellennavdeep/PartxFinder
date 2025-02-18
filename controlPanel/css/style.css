@@ -233,6 +233,7 @@ aside#sidebar {
 .simplebar-wrapper p { font-size: 14px; }
 .header-icon-badge { position: absolute; padding: 0.15rem 0.25rem; inset-block-start: 0; inset-inline-end: 0.45rem; font-size: 0.625rem; }
 .dashbaord_part{width: 50px; height: 50px; object-fit: cover; border-radius: 8px;}
+.dash-card { background-color: #f8f8f8; padding: 20px 10px; border-radius: 12px; box-shadow: rgb(41 45 50 / 10%) 0px 10px 10px -10px; }
 
 @keyframes ring {
     0% {
